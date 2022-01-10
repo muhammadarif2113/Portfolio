@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "barba.js": "^1.0.0"
+  }
+}

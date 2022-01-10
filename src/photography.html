@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Gallery</title>
+
+</head>
+
+<body class="home" id="photography" data-barba="wrapper">
+    <div class="loading-bg"></div>
+    <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <section id="menu">
+        <nav>
+            <a href="/src/index.html">Home</a>
+            <a href="/src/about.html">About</a>
+            <a href="/src/projects.html">Projects</a>
+            <a href="/src/contact.html">Contact</a>
+        </nav>
+    </section>
+
+    <main data-barba="container" data-barba-namespace="gallery">
+        <section id="gallery">
+            <div class="container">
+                <div class="content-area">
+                    <div class="white-bg">
+                        <h2>Gallery</h2>
+                        <ul>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Tribute in Light 1.jpg"alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Soft Breeze 1.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Stopping By the City 1.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/House of Usher 1.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Homeward Bound 1.jpg"alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Higher We Go 1.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Dead End 1.jpg" alt="">
+                            </li>
+
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/DSC_0702 as Smart Object-3 as Smart Object-5-min.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/DSC_1270-(2)-as-Smart-Object-1-min.png" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/DSC_2081-as-Smart-Object-89999999999-min.png" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/DSC_2481 as Smart Object-1 as Smart Object-6 CROPPED-min.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Calm _ Collected 1.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/Canon-3-(new)-min.png" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/DSC_1471 as Smart Object-6-min.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="hover-bg"></div>
+                                <img src="./img/CT-FRUIT-STANDS-2-as-Smart-Object-1-eidt-4-min.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    
+    <script type="javascript" src="https://unpkg.com/@barba/core"></script>
+    <script src="/src/js/barba.min.js" type="text/javascript"></script>
+    <script src="./js/barba.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./js/index.js"></script>
+    
+    <!-- <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script> -->
+
+    <script>
+        const galleryEnter = () => {
+            let timeline = gsap.timeline(); 
+            timeline.fromTo(
+                '.white-bg', 
+                {
+                    y:50, 
+                    opacity: 0
+                }, 
+                {
+                    y:0, 
+                    opacity: 1, 
+                    duration: .8, 
+                    ease: 'power1.inOut'
+                }
+            ).fromTo(
+                '.white-bg ul li', 
+                {
+                    y:50, 
+                    opacity: 0
+                }, 
+                {
+                    y:0, 
+                    opacity: 1, 
+                    duration: .2, 
+                    stagger: .4, 
+                    ease: 'power1.inOut'
+                }
+            )
+        }
+
+        galleryEnter(); 
+    </script>
+
+
+</body>
+</html>
+
