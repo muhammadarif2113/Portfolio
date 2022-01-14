@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" id="html-back">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,19 @@
 
 <body class="home" id="photography" data-barba="wrapper">
     <div class="loading-bg"></div>
-    <div class="menu-icon">
-        <i class="fas fa-bars"></i>
+
+    <div class="nav-bar">
+        <div class="nav-ctn">
+            <div class="logo">
+                <a href="/index.html"><img src="./img/logoblack.png"></a>
+            </div>
+    
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </div>
+    
 
     <section id="menu">
         <nav>
@@ -25,76 +35,152 @@
             <a href="/src/contact.html">Contactt</a>
         </nav>
     </section>
-
+    
     <main data-barba="container" data-barba-namespace="gallery">
         <section id="gallery">
             <div class="container">
                 <div class="content-area">
+                    <div class="header-wrapper">
+                        <h1 class="header-title">Photography</h1>
+                        <p class="header-text">My collection of cityscapes and street photographs taken in NYC.</p>
+                    </div>
                     <div class="white-bg">
-                        <h2>Gallery</h2>
-                        <ul>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Tribute in Light 1.jpg"alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Soft Breeze 1.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Stopping By the City 1.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/House of Usher 1.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Homeward Bound 1.jpg"alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Higher We Go 1.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Dead End 1.jpg" alt="">
-                            </li>
+                        <!-- <h2>Gallery</h2> -->
+                        <div class="img-wrapper">
 
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/DSC_0702 as Smart Object-3 as Smart Object-5-min.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/DSC_1270-(2)-as-Smart-Object-1-min.png" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/DSC_2081-as-Smart-Object-89999999999-min.png" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/DSC_2481 as Smart Object-1 as Smart Object-6 CROPPED-min.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Calm _ Collected 1.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/Canon-3-(new)-min.png" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/DSC_1471 as Smart Object-6-min.jpg" alt="">
-                            </li>
-                            <li>
-                                <div class="hover-bg"></div>
-                                <img src="./img/CT-FRUIT-STANDS-2-as-Smart-Object-1-eidt-4-min.png" alt="">
-                            </li>
-                        </ul>
+                            <div class="gallery-container h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-1">
+                                        <img class="zoom" src="./img/verrazzanoBridge.jpg" data-zoom-src="./img/Soft Breeze 1.jpg"alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-container w-2 h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-2">
+                                        <img class="zoom" src="./img/DSC_2081-as-Smart-Object-89999999999-min.png" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-container w-2">
+                                <div class="gallery-item zoom">
+                                    <div class="image" id="img-3">
+                                        <img class="zoom" src="./img/Higher We Go 1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-container w-1">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-12">
+                                        <img class="zoom" src="./img/CT-FRUIT-STANDS-2-as-Smart-Object-1-eidt-4-min.png" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-container w-3 h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-4">
+                                        <img class="zoom" src="./img/Stopping By the City 1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-container w-2 h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-5">
+                                        <img class="zoom" src="./img/Homeward Bound 1.jpg"alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-container h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-6">
+                                        <img class="zoom" src="./img/tributeLights.jpg" data-zoom-src="./img/Tribute in Light 1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-container w-1">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-7">
+                                        <img class="zoom" src="./img/Canon-3-(new)-min.png" alt="">
+                                        
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-container w-2 h-1">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-9">
+                                        <img class="zoom" src="./img/manhattanBridge.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="gallery-container w-2 h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-14">
+                                        <img class="zoom" src="./img/DSC_1471 as Smart Object-6-min.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-container h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-10">
+                                        <img class="zoom" src="./img/House of Usher 1.jpg" alt=""> 
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="gallery-container w-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-13">
+                                        <img class="zoom" src="./img/Dead End 1.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="gallery-container w-4">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-15">
+                                        <img class="zoom" src="./img/Calm _ Collected 1.jpg" alt="">                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+
+
+                            <div class="gallery-container w-3 h-2">
+                                <div class="gallery-item">
+                                    <div class="image" id="img-11">
+                                        <img class="zoom" src="./img/DSC_2481 as Smart Object-1 as Smart Object-6 CROPPED-min.jpg" alt="">
+                                    </div>
+                                    <div class="text">Brooklyn, NY</div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,44 +194,46 @@
     <script src="./js/barba.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./js/medium-zoom.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/photography.js"></script>
     
     <!-- <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script> -->
 
     <script>
-        const galleryEnter = () => {
-            let timeline = gsap.timeline(); 
-            timeline.fromTo(
-                '.white-bg', 
-                {
-                    y:50, 
-                    opacity: 0
-                }, 
-                {
-                    y:0, 
-                    opacity: 1, 
-                    duration: .8, 
-                    ease: 'power1.inOut'
-                }
-            ).fromTo(
-                '.white-bg ul li', 
-                {
-                    y:50, 
-                    opacity: 0
-                }, 
-                {
-                    y:0, 
-                    opacity: 1, 
-                    duration: .2, 
-                    stagger: .4, 
-                    ease: 'power1.inOut'
-                }
-            )
-        }
+        // const galleryEnter = () => {
+        //     let timeline = gsap.timeline(); 
+        //     timeline.fromTo(
+        //         '.white-bg', 
+        //         {
+        //             y:50, 
+        //             opacity: 0
+        //         }, 
+        //         {
+        //             y:0, 
+        //             opacity: 1, 
+        //             duration: .8, 
+        //             ease: 'power1.inOut'
+        //         }
+        //     ).fromTo(
+        //         '.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10, .img-11, .img-12, .img-13, .img-14, .img-15', 
+        //         {
+        //             y:50, 
+        //             opacity: 0
+        //         }, 
+        //         {
+        //             y:0, 
+        //             opacity: 1, 
+        //             duration: .2, 
+        //             stagger: .4, 
+        //             ease: 'power1.inOut'
+        //         }
+        //     )
+        // }
 
-        galleryEnter(); 
+        // galleryEnter(); 
     </script>
 
 

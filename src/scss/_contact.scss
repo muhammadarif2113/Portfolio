@@ -8,6 +8,12 @@
         left: 0;
         padding: 54px;
 
+        // .logo img{
+        //     border: 1px solid white;
+        //     height: 100px;
+        //     width: 200px;
+        // }
+
         .info-box{
             
             position: absolute;
@@ -112,6 +118,7 @@
             display: inline-block;
             padding: 56px;
             width: 70%;
+            // text-align: center;
 
             .contact-info{
                 h1{
@@ -228,24 +235,22 @@
             }
         }
 
-        .content-area{
-            height: auto !important;
-
-            &:after{
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
-
         .info-section{
             padding: 10px 20px;
             position: static;
+            height: 125px;
 
-            .logo{
-                height: 50px;
-                width: 70px;
-                font-size: 1rem;
+            // .logo{
+            //     height: 50px;
+            //     width: 150px;
+            //     font-size: 2.5rem;
+            // }
+
+            .logo img{
+                height: 150px;
+                width: 200px;
+                margin: 30px 0px 0 130px;
+                // margin-left: 130px;
             }
 
             .info-box{
@@ -254,9 +259,7 @@
         }
 
         .content-area{
-            margin-left: 0;
-            width: 100%;
-
+            padding-right: 10px; 
             &:after{
                 content: "";
                 display: table;
@@ -264,22 +267,34 @@
             }
 
             .img-container{
-                width: 100%;
+                // width: 100%;
                 padding: 56px 20px 0;
                 height: auto;
 
                 .form-section{
                     position: static;
-                    width: 100%;
+                    // width: 100%;
                     height: auto;
                     overflow: auto;
+                }
+
+                textarea{
+                    height: 150px;
                 }
             }
 
             .contact-section{
-                width: 100%;
+                // width: 100%;
                 float: left;
                 padding: 20% 20px 0;
+                .contact-info{
+                    margin-right: 13px;
+                    .contact-box{
+                        span{
+                            display: block;
+                        }
+                    }
+                }
             }
         }
 
@@ -288,7 +303,13 @@
 //tablet
 @media (min-width: 768px) and (max-width:991px){
     #contact{
+        padding-right: 0;
+
+        .menu-icon{
+            margin-top: -45px;
+        }
         .info-section{
+            position: fixed;
             .icon-section {
                 a{
                     font-size: 1.4rem;
@@ -316,9 +337,9 @@
                 }
             }
             .contact-section{
-                width: 70%;
-                float: left;
-                padding: 20% 20px 0;
+                width: 95%;
+                // float: left;
+                padding: 56px 20px 0;
             }
         }
     }
@@ -326,6 +347,14 @@
 //laptops
 @media (min-width: 992px) and (max-width: 1199px){
     #contact{
+        .menu-icon{
+            margin-top: -45px;
+        }
+
+        .info-section{
+            position: fixed;
+        }
+
         .content-area{
             height: auto;
 
@@ -350,10 +379,14 @@
             }
 
             .contact-section{
-                width: 70%;
-                float: left;
+
                 padding: 20% 20px 0;
                 max-width: 800px;
+
+                .contact-info{
+                    width: 100%;
+                    margin-left: 90px;
+                }
 
                 
             }
@@ -375,7 +408,7 @@
             }
 
             .contact-section{
-                width: 70%;
+                // width: 100%;
                 float: left;
                 padding: 20% 60px 0;
                 max-width: 800px;
@@ -399,11 +432,40 @@
             }
 
             .contact-section{
-                width: 70%;
-                float: left;
+                // width: 70%;
+                // float: left;
+                padding: 20% 60px 0;
+                max-width: 800px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px){
+    #contact{
+        .content-area{
+            .contact-section{
+                margin: 50px 10px; 
                 padding: 20% 60px 0;
                 max-width: 800px;
 
+                .contact-info{
+                    margin-bottom: 100px;
+                    text-align: center;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px){
+    #contact{
+        .info-section{
+            .info-box{
+                span{
+                    display: block;
+                }
             }
         }
     }

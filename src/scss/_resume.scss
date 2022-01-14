@@ -1,14 +1,14 @@
 #resume{
-    .loading-bg{
-        background: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        transform: translate(0, 100%); 
-        z-index: 100;
-    }
+    // .loading-bg{
+    //     background: white;
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     transform: translate(0, 100%); 
+    //     z-index: 100;
+    // }
     .info-section{
         width: 20%;
     }
@@ -25,12 +25,14 @@
 
     .category{
         margin-bottom: 56px;
+
         
         h1{
             font-weight: 700;
             font-size: 2rem;
             text-transform: uppercase;
             margin-bottom: 56px;
+            text-decoration: underline;
         }
     
         .xp-section{
@@ -68,9 +70,9 @@
 
 //phone
 @media (min-width: 0px) and (max-width: 767px){
-    html, body{
-        height: auto;
-    }
+    // html, body{
+    //     height: auto;
+    // }
 
     #resume{
         .menu-icon{
@@ -84,13 +86,13 @@
         }
 
         .info-section{
-            padding: 10px 30px;
+            padding: 10px 20px;
             position: static;
-            border: 3px solid red;
+
             .logo{
                 height: 50px;
-                width: 70px;
-                font-size: 1rem;
+                width: 200px;
+                font-size: 2rem;
             }
 
             .info-box{
@@ -99,9 +101,7 @@
         }
 
         .content-area{
-            border: 3px solid black;
-            // margin-left: 0;
-            margin-right: 30%;
+            margin-left: 0;
             width: 100%;
             height: auto !important;
 
@@ -132,7 +132,7 @@
 @media (min-width: 768px) and (max-width:991px){
     #resume{
         .info-section{
-            width: 300px;
+            // width: 300px;
             padding: 0;
 
             .logo{
@@ -141,8 +141,8 @@
             }
             .info-box{
                 width: 100%;
-                padding: 56px 10px;
-                margin-bottom: 40px;
+                // padding: 56px 10px;
+                // margin-bottom: 40px;
                 text-align: center;
             }
             .icon-section {
@@ -153,8 +153,8 @@
         }
         .content-area{
             height: auto;
-            width: 70%;
-            margin-left: 30%;
+            // width: 70%;
+            // margin-left: 30%;
 
             &:after{
                 content: ""; 
@@ -176,11 +176,21 @@
 @media (min-width: 992px) and (max-width: 1199px){
     #resume{
         .info-section{
-            width: 300px;
+            // width: 300px;
+            padding: 0;
         }
+        .logo{
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .info-box{
+            width: 100%;
+            text-align: center;
+        }
+
         .icon-section {
             a{
-                font-size: 1.4rem;
+                font-size: 1.9rem;
             }
         }
     }
@@ -197,32 +207,47 @@
     }
 }
 //extra big
-@media (min-width: 1200px){
+// @media (min-width: 1200px){
+//     #resume{
+//         .info-section{
+//             width: 30%;
+        
+//             .icon-section{
+//                 a{
+//                     font-size: 1.4rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+@media (max-width: 1500px){
     #resume{
         .info-section{
-            width: 30%;
-        
-            .icon-section{
-                a{
-                    font-size: 1.4rem;
+            .logo{
+                width: 150px;
+                font-size: 2.5rem;
+                padding: 0; 
+            }
+            .info-box{
+                span{
+                    display: block;
                 }
             }
         }
     }
 }
+// @media (max-width: 1600px){
 
-@media (max-width: 1600px){
 
+//     #resume{
+//         .info-section{
+//             width: 30%;
+//         }
+//         .content-area{
+//             width: 70%;
+//             margin-left: 30%;
 
-    #resume{
-        .info-section{
-            width: 30%;
-        }
-        .content-area{
-            width: 70%;
-            margin-left: 30%;
-
-        }
-    }
+//         }
+//     }
     
-}
+// }

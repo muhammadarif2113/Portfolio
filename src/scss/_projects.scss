@@ -132,10 +132,33 @@
 //phone
 @media (min-width: 0px) and (max-width: 767px){
     #projects{
+        .info-section{
+            padding: 10px 20px;
+            position: static;
+
+            .logo{
+                height: 50px;
+                width: 200px;
+                font-size: 2rem;
+            }
+
+            .info-box{
+                display: none;
+            }
+        }
         .content-area{
-            border: 5px solid bLACK;
+            margin-left: 0;
+            width: 100%;
+            &:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
             .scroll-section{
                 .projects-section{
+                    .title h1{
+                        text-align: center;
+                    }
                     .work-section{
                         .project-box{
                             .grey-bg{
@@ -157,59 +180,21 @@
                 color: white;
             }
         }
-
-        // .content-area{
-        //     height: auto !important;
-
-        //     &:after{
-        //         content: "";
-        //         display: table;
-        //         clear: both;
-        //     }
-        // }
-
-        .info-section{
-            padding: 10px 20px;
-            position: static;
-
-            .logo{
-                height: 50px;
-                width: 70px;
-                font-size: 1rem;
-            }
-
-            .info-box{
-                display: none;
-            }
-        }
-
-        .content-area{
-            margin-left: 0;
-            width: 100%;
-
-            &:after{
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
-
     }
 }
 //tablet
 @media (min-width: 768px) and (max-width:991px){
     #projects{
         .info-section{
-            width: 300px;
             padding: 0;
+
             .logo{
                 margin: 0 auto;
                 margin-top: 50px;
             }
             .info-box{
                 width: 100%;
-                padding: 56px 10px;
-                margin-bottom: 40px;
+                // padding: 56px 10px;
                 text-align: center;
             }
             .icon-section {
@@ -226,18 +211,18 @@
                 clear: both;
             }
 
-            .img-container{
-                width: 100%;
-                padding: 56px 20px 0;
-                height: auto;
+            // .img-container{
+            //     width: 100%;
+            //     padding: 56px 20px 0;
+            //     height: auto;
 
-                .form-section{
-                    position: static;
-                    width: 100%;
-                    height: auto;
-                    overflow: auto;
-                }
-            }
+            //     .form-section{
+            //         position: static;
+            //         width: 100%;
+            //         height: auto;
+            //         overflow: auto;
+            //     }
+            // }
             .contact-section{
                 width: 70%;
                 float: left;
@@ -249,109 +234,51 @@
 //laptops
 @media (min-width: 992px) and (max-width: 1199px){
     #projects{
-        .content-area{
-            height: auto;
+        .info-section{
+            padding: 0;
 
+            .logo{
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+
+            .info-box{
+                width: 100%;
+                text-align: center;
+            }
+
+            .icon-section {
+                a{
+                    font-size: 1.9rem;
+                }
+            }
+
+        }
+        .content-area{
             &:after{
                 content: "";
                 display: table;
                 clear: both;
-            }
-            // .img-container{
-            //     padding: 56px 20px 0;
-            //     float: left;
-            //     height: auto;
-            //     width: 100%;
-
-            //     .form-section{
-            //         position: static;
-            //         width: 100%;
-            //         float: left;
-            //         height: auto;
-            //         overflow: auto;
-            //     }
-            // }
-
-            .contact-section{
-                width: 70%;
-                float: left;
-                padding: 20% 20px 0;
-                max-width: 800px;
-
-                
-            }
-        }
-    }
-}
-//extra big
-@media (min-width: 1200px){
-    #projects{
-        .content-area{
-            // .img-container{
-            //     padding: 56px 20px 0;
-            //     float: left;
-
-            //     .form-section{
-            //         left: -157px;
-            //         width: 400;
-            //     }
-            // }
-
-            .contact-section{
-                width: 70%;
-                float: left;
-                padding: 20% 60px 0;
-                max-width: 800px;
-
-            }
-        }
-    }
-}
-
-@media (min-width: 1500px){
-    #projects{
-        .content-area{
-            // .img-container{
-            //     padding: 56px 20px 0;
-            //     float: left;
-
-            //     .form-section{
-            //         left: -250px;
-            //         width: 500;
-            //     }
-            // }
-
-            .contact-section{
-                width: 70%;
-                float: left;
-                padding: 20% 60px 0;
-                max-width: 800px;
-
             }
         }
     }
 }
 
 @media (max-width: 1500px){
-
-
     #projects{
-        background: yellowgreen;
         .info-section{
-            width: 30%;
-        }
-        .content-area{
-            width: 70%;
-            margin-left: 30%;
-            &:after{
-                content: "";
-                display: table;
-                clear: both;
+            .logo{
+                width: 150px;
+                font-size: 2.5rem;
+                padding: 0; 
             }
-
+            .info-box{
+                span{
+                    display: block;
+                }
+            }
         }
     }
-    
 }
 
 @media (max-width: 2310px){
@@ -384,13 +311,4 @@
             }
         }
     }
-    // .work-section{
-    //     display: grid;
-    //     border: 5px solid red;
-    //     grid-column: 1fr;
-    //     grid-template-columns: 1fr;
-    //     .project-box{
-    //         // grid-template-columns: 1fr;
-    //     }
-    // }
 }
