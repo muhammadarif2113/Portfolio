@@ -11,6 +11,12 @@
     // }
     .info-section{
         width: 20%;
+        
+        .logo{
+            #small-logo{
+                display: none;
+            }
+        }
     }
 
     .content-area{
@@ -69,7 +75,7 @@
 }
 
 //phone
-@media (min-width: 0px) and (max-width: 767px){
+@media (min-width: 0px) and (max-width: 999px){
     // html, body{
     //     height: auto;
     // }
@@ -88,11 +94,18 @@
         .info-section{
             padding: 10px 20px;
             position: static;
+            height: 75px;
 
             .logo{
                 height: 50px;
                 width: 200px;
                 font-size: 2rem;
+                #big-logo{
+                    display: none;
+                }
+                #small-logo{
+                    display: block;
+                }
             }
 
             .info-box{

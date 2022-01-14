@@ -8,6 +8,18 @@
         left: 0;
         padding: 54px;
 
+        .logo{
+            #small-logo{
+                display: none;
+            }
+        }
+
+        // .logo{
+        //     #small-logo{
+        //         display: none;
+        //     }
+        // }
+
         // .logo img{
         //     border: 1px solid white;
         //     height: 100px;
@@ -192,6 +204,13 @@
                 height: 50px;
                 width: 70px;
                 font-size: 1rem;
+
+                #big-logo{
+                    display: none;
+                }
+                #small-logo{
+                    display: block;
+                }
             }
             .info-box{
                 display: none;

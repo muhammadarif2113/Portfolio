@@ -287,6 +287,10 @@ html .logo a {
   padding: 54px;
 }
 
+#homee .info-section .logo {
+  border: 5px solid #4b21ff;
+}
+
 #homee .info-section .info-box {
   position: absolute;
   bottom: 60px;
@@ -351,7 +355,6 @@ html .logo a {
   vertical-align: top;
   display: inline-block;
   padding: 20% 0 0;
-  max-width: 500px;
 }
 
 #homee .content-area .profile-section .profile h1 {
@@ -377,7 +380,89 @@ html .logo a {
   margin: 0 0 2rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 534px) {
+  #home-back {
+    background: white;
+  }
+  #homee .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: white;
+  }
+  #homee .menu-icon .fa {
+    color: white;
+  }
+  #homee .content-area {
+    height: auto;
+  }
+  #homee .content-area:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #homee .info-section {
+    width: 30%;
+    padding: 56px 30px;
+    height: 570px;
+  }
+  #homee .info-section .logo {
+    display: none;
+  }
+  #homee .info-section .icon-section a {
+    font-size: 1.4rem;
+  }
+  #homee .info-section .info-box {
+    display: none;
+  }
+  #homee .content-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  #homee .content-area .img-container {
+    padding-top: 60px;
+    width: 120px;
+    height: 550px;
+    margin-left: 4px;
+  }
+  #homee .content-area .img-container .user-img {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+  #homee .content-area .profile-section {
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+  }
+  #homee .content-area .profile-section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #homee .content-area .profile-section .profile {
+    width: 100%;
+    margin-left: 5px;
+  }
+  #homee .content-area .profile-section .profile .home-buttons-main {
+    display: none;
+  }
+  #homee .content-area .home-buttons {
+    display: block;
+    display: -ms-grid;
+    display: grid;
+    float: right;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0 0 0;
+  }
+  #homee .content-area .home-buttons .primary-btn, #homee .content-area .home-buttons .ghost-btn {
+    width: 90%;
+  }
+}
+
+@media (min-width: 534px) and (max-width: 767px) {
   #homee .menu-icon {
     top: -3px;
     right: 20px;
@@ -398,13 +483,11 @@ html .logo a {
     width: 30%;
     padding: 56px 30px;
   }
+  #homee .info-section .logo {
+    display: none;
+  }
   #homee .info-section .icon-section a {
     font-size: 1.4rem;
-  }
-  #homee .info-section .logo {
-    height: 50px;
-    width: 70px;
-    font-size: 1rem;
   }
   #homee .info-section .info-box {
     display: none;
@@ -414,8 +497,9 @@ html .logo a {
     width: 100%;
   }
   #homee .content-area .img-container {
-    padding: 56px 5px 0;
-    width: 110px;
+    padding-top: 56px;
+    width: 120px;
+    margin-left: 4px;
   }
   #homee .content-area .img-container .user-img {
     position: static;
@@ -426,10 +510,19 @@ html .logo a {
     width: 70%;
     float: right;
     padding: 20% 20px 0;
+    margin-right: 35px;
+  }
+  #homee .content-area .profile-section:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #homee .info-section .info-box p #email {
+    display: block;
+  }
   #homee .content-area .img-container {
     padding: 56px 10px 0;
   }
@@ -439,13 +532,17 @@ html .logo a {
     width: 100%;
   }
   #homee .content-area .profile-section {
-    width: 70%;
+    width: 60%;
     float: right;
-    padding: 20% 10px 0;
+    padding: 20% 0px 0 0;
+    margin-right: 50px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  #homee .content-area .profile-section {
+    margin-left: 20px;
+  }
   #homee .content-area .img-container {
     padding: 56px 10px 0;
     float: left;
@@ -479,6 +576,12 @@ html .logo a {
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #homee .content-area .profile-section {
+    margin-left: 35px;
+  }
+}
+
 @media (max-width: 1635px) {
   .home .content-area .img-container .user-img {
     top: 180px;
@@ -495,6 +598,10 @@ html .logo a {
 
 #resume .info-section {
   width: 20%;
+}
+
+#resume .info-section .logo #small-logo {
+  display: none;
 }
 
 #resume .content-area {
@@ -552,7 +659,7 @@ html .logo a {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 999px) {
   #resume .menu-icon {
     top: -3px;
     right: 20px;
@@ -564,11 +671,18 @@ html .logo a {
   #resume .info-section {
     padding: 10px 20px;
     position: static;
+    height: 75px;
   }
   #resume .info-section .logo {
     height: 50px;
     width: 200px;
     font-size: 2rem;
+  }
+  #resume .info-section .logo #big-logo {
+    display: none;
+  }
+  #resume .info-section .logo #small-logo {
+    display: block;
   }
   #resume .info-section .info-box {
     display: none;
@@ -670,6 +784,10 @@ html .logo a {
 
 #projects .info-section {
   width: 20%;
+}
+
+#projects .info-section .logo #small-logo {
+  display: none;
 }
 
 #projects .content-area {
@@ -804,15 +922,22 @@ html .logo a {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 999px) {
   #projects .info-section {
     padding: 10px 20px;
     position: static;
+    height: 75px;
   }
   #projects .info-section .logo {
     height: 50px;
     width: 200px;
     font-size: 2rem;
+  }
+  #projects .info-section .logo #big-logo {
+    display: none;
+  }
+  #projects .info-section .logo #small-logo {
+    display: block;
   }
   #projects .info-section .info-box {
     display: none;
@@ -933,6 +1058,10 @@ html .logo a {
   bottom: 0;
   left: 0;
   padding: 54px;
+}
+
+#contact .info-section .logo #small-logo {
+  display: none;
 }
 
 #contact .info-section .info-box {
@@ -1099,6 +1228,12 @@ html .logo a {
     height: 50px;
     width: 70px;
     font-size: 1rem;
+  }
+  #contact .info-section .logo #big-logo {
+    display: none;
+  }
+  #contact .info-section .logo #small-logo {
+    display: block;
   }
   #contact .info-section .info-box {
     display: none;
@@ -1327,6 +1462,7 @@ html .logo a {
   margin-left: 53px;
   background: black;
   position: absolute;
+  border: 5px solid black;
 }
 
 #photography .nav-bar .nav-ctn .menu-icon {

@@ -17,6 +17,10 @@
         left: 0;
         padding: 54px;
 
+        .logo{
+            border: 5px solid #4b21ff;
+        }
+
         .info-box{
             
             position: absolute;
@@ -66,6 +70,7 @@
             position: relative;
             height: 100%;
 
+
             .user-img{ 
                 position: absolute;
                 top: 180px; //56px; 
@@ -89,7 +94,7 @@
             vertical-align: top;
             display: inline-block;
             padding: 20% 0 0;
-            max-width: 500px;
+            // max-width: 500px;
 
             .profile{
                 h1{
@@ -111,12 +116,141 @@
                     line-height: 1.4;
                     margin: 0 0 2rem;
                 }
+
+                
             }
         }
     }
 }
+@media (max-width: 534px) {
+    #home-back{
+        background: white;
 
-@media (max-width: 767px) {
+    }
+    #homee{
+        .menu-icon{
+            top: -3px;
+            right: 20px;
+            color: white;
+
+            .fa{
+                color: white;
+            }
+        }
+        .content-area{
+            // background: green;
+            height: auto;
+            &:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .info-section{
+            width: 30%;
+            padding: 56px 30px;
+            height: 570px;
+
+            .logo{
+                display: none;
+            }
+
+            .icon-section{
+                a{
+                    font-size: 1.4rem;
+                }
+            }
+            
+            // .logo{
+            //     height: 50px;
+            //     width: 70px;
+            //     font-size: 1rem;
+            // }
+            .info-box{
+                display: none;
+            }
+        }
+        .content-area{
+            margin-left: 0;
+            width: 100%;
+            // border: 4px solid red;
+            // height: 1000px; 
+
+            .img-container{
+                // padding: 56px 5px 0;
+                padding-top: 60px;
+                width: 120px;
+                height: 550px; 
+                margin-left: 4px;
+
+                .user-img{
+                    position: static;
+                    width: 100%;
+                    // height: calc(100% - 112px);
+                    height: 100%; ;
+                }
+            }
+            .profile-section{
+                text-align: center;
+                width: 60%;
+                height: 100%; 
+                float: right;
+                margin-right: 20px;
+
+                &:after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                .profile{
+                    // height: 100%; 
+                    width: 100%;
+                    margin-left: 5px;
+
+                    .home-buttons-main{
+                        display: none;
+                    }
+
+
+                    
+                }
+            }
+            .home-buttons{
+                display: block;
+                display: grid;
+                float: right;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 20px 0 0 0; 
+
+                .primary-btn, .ghost-btn{
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    // #homee{
+    //     .content-area{
+    //         .profile-section{
+    //             border: 1px solid black; 
+    //             width: 100%;
+    //             // height: 100%;
+    //             // position: absolute;
+    //             .profile{
+    //                 border: 1px solid red;
+    //                 margin-top: 40px;
+    //                 padding: 0;
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 // position: relative;
+    //                 // margin-left: 40px;
+
+    //             }
+    //         }
+    //     }
+    // }
+}
+@media (min-width: 534px) and (max-width: 767px) {
     #homee{
         .menu-icon{
             top: -3px;
@@ -139,17 +273,21 @@
             width: 30%;
             padding: 56px 30px;
 
+            .logo{
+                display: none;
+            }
+
             .icon-section{
                 a{
                     font-size: 1.4rem;
                 }
             }
             
-            .logo{
-                height: 50px;
-                width: 70px;
-                font-size: 1rem;
-            }
+            // .logo{
+            //     height: 50px;
+            //     width: 70px;
+            //     font-size: 1rem;
+            // }
             .info-box{
                 display: none;
             }
@@ -159,8 +297,10 @@
             width: 100%;
 
             .img-container{
-                padding: 56px 5px 0;
-                width: 110px;
+                // padding: 56px 5px 0;
+                padding-top: 56px;
+                width: 120px;
+                margin-left: 4px;
 
                 .user-img{
                     position: static;
@@ -172,6 +312,19 @@
                 width: 70%;
                 float: right;
                 padding: 20% 20px 0;
+                margin-right: 35px;
+
+                &:after{
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+                // .profile{
+                //     width: 100%;
+                //     // margin-right: 130px;
+                //     border: 1px solid black;
+                // }
 
                 
             }
@@ -181,6 +334,15 @@
 
 @media (min-width: 768px) and (max-width:991px){
     #homee{
+        .info-section{
+            .info-box{
+                p{
+                    #email{
+                        display: block;
+                    }
+                }
+            }
+        }
         .content-area{
             .img-container{
                 padding: 56px 10px 0;
@@ -191,9 +353,10 @@
                 }
             }
             .profile-section{
-                width: 70%;
+                width: 60%;
                 float: right;
-                padding: 20% 10px 0;
+                padding: 20% 0px 0 0;
+                margin-right: 50px;
             }
         }
     }
@@ -202,6 +365,9 @@
 @media (min-width: 992px) and (max-width: 1199px){
     #homee{
         .content-area{
+            .profile-section{
+                margin-left: 20px;
+            }
             .img-container{
                 padding: 56px 10px 0;
                 float: left;
@@ -245,6 +411,17 @@
                 padding: 20% 60px 0;
                 max-width: 800px;
 
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    #homee{
+        // background: greenyellow;
+        .content-area{
+            .profile-section{
+                margin-left: 35px;
             }
         }
     }
