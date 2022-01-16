@@ -12,7 +12,8 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "medium-zoom": "^1.0.6",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "pdfjs": "^2.4.7"
   },
   "devDependencies": {
     "barba.js": "^1.0.0"

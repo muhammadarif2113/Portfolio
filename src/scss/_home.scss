@@ -98,6 +98,7 @@
 
             .profile{
                 h1{
+                    font-family: $font3;
                     font-size: 2.3rem;
                     font-weight: 500;
                     line-height: 1.2;
@@ -107,10 +108,12 @@
                     }
                 }
                 h5{
+                    font-family: $font2;
                     font-size: 1.1rem;
                     margin: 0 0 2rem 0;
                 }
                 p{
+                    font-family: $font1;
                     color: $color4;
                     font-weight: 300;
                     line-height: 1.4;
@@ -275,6 +278,8 @@
                     
                 }
             }
+
+                
             .home-buttons{
                 display: block;
                 display: grid;
@@ -286,6 +291,19 @@
                     width: 90%;
                 }
             }
+            
+            // .home-buttons{
+            //     background: yellow; 
+            //     display: block;
+            //     display: grid;
+            //     float: right;
+            //     grid-template-columns: 1fr 1fr 1fr;
+            //     margin: 20px 0 0 0; 
+
+            //     .primary-btn, .ghost-btn{
+            //         width: 90%;
+            //     }
+            // }
         }
 
         footer{

@@ -9,6 +9,13 @@ const navBar = document.querySelector('.menu-icon');
 const home = document.querySelector('.home'); 
 
 navBar.addEventListener('click', ()=> {
+    var links = document.querySelector('nav').children; 
+
+    for (link of links){
+        if(document.URL == link.href){
+            link.style.color = 'black'; 
+        }
+    }
     if(home.classList.contains('menu-active')){
         home.classList.remove('menu-active')
     } else {
@@ -16,16 +23,12 @@ navBar.addEventListener('click', ()=> {
     }
 })
 
-console.log(document.URL); //baseURI
-console.log(document.querySelector('nav').children); 
-var links = document.querySelector('nav').children; 
+// console.log(document.URL); //baseURI
+// console.log(document.querySelector('nav').children); 
+// var links = document.querySelector('nav').children; 
 
 
-for (link of links){
-    if(document.URL == link.href){
-        link.style.color = 'black'; 
-    }
-}
+
 
 
 

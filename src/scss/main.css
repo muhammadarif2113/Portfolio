@@ -61,7 +61,6 @@ body,
 html {
   font-size: 18px;
   background: #4b21ff;
-  font-family: 'Fira Sans', sans-serif;
   height: 100%;
 }
 
@@ -148,6 +147,7 @@ html .logo a {
 
 #menu {
   background: #4b21ff;
+  font-family: "Playfair Display", serif;
   position: fixed;
   width: 100%;
   top: 0;
@@ -358,6 +358,7 @@ html .logo a {
 }
 
 #homee .content-area .profile-section .profile h1 {
+  font-family: "Dosis", sans-serif;
   font-size: 2.3rem;
   font-weight: 500;
   line-height: 1.2;
@@ -369,11 +370,13 @@ html .logo a {
 }
 
 #homee .content-area .profile-section .profile h5 {
+  font-family: "Playfair Display", serif;
   font-size: 1.1rem;
   margin: 0 0 2rem 0;
 }
 
 #homee .content-area .profile-section .profile p {
+  font-family: "Fira Sans", sans-serif;
   color: #a9a9a9;
   font-weight: 300;
   line-height: 1.4;
@@ -678,6 +681,7 @@ html .logo a {
 }
 
 #resume .category h1 {
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
@@ -707,15 +711,21 @@ html .logo a {
 }
 
 #resume .category .xp-section .xp-box h5 {
+  font-family: "Dosis", sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
   margin-bottom: 1.4rem;
 }
 
 #resume .category .xp-section .xp-box p {
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+#resume .category .xp-section .xp-box .dates {
+  font-family: "Fira Sans", sans-serif;
 }
 
 #resume footer {
@@ -911,6 +921,7 @@ html .logo a {
 }
 
 #projects .projects-section h1 {
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
@@ -1258,6 +1269,7 @@ html .logo a {
 }
 
 #contact .content-area .img-container .form-section {
+  font-family: "Dosis", sans-serif;
   position: absolute;
   top: 56px;
   left: -250px;
@@ -1279,6 +1291,7 @@ html .logo a {
 #contact .content-area .img-container .form-section input[type="text"],
 #contact .content-area .img-container .form-section input[type="email"],
 #contact .content-area .img-container .form-section textarea {
+  font-family: "Fira Sans", sans-serif;
   width: 100%;
   background: transparent;
   border: none;
@@ -1295,6 +1308,7 @@ html .logo a {
 }
 
 #contact .content-area .img-container .form-section button[type="submit"] {
+  font-family: "Dosis", sans-serif;
   background: #4b21ff;
   border: none;
   border-radius: 30px;
@@ -1322,6 +1336,7 @@ html .logo a {
 }
 
 #contact .content-area .contact-section .contact-info h1 {
+  font-family: "Dosis", sans-serif;
   font-size: 2.3rem;
   font-weight: 500;
   line-height: 1.2;
@@ -1347,12 +1362,14 @@ html .logo a {
 }
 
 #contact .content-area .contact-section .contact-info .contact-box h5 {
+  font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 1.1rem;
   margin: 0 0 1.5rem;
 }
 
 #contact .content-area .contact-section .contact-info .contact-box p {
+  font-family: "Dosis", sans-serif;
   color: #a9a9a9;
   font-weight: 300;
   line-height: 1.4;
@@ -1677,6 +1694,11 @@ html .logo a {
 
 #photography .header-wrapper .header-title {
   font-size: 1.5rem;
+  font-family: "Dosis", sans-serif;
+}
+
+#photography .header-wrapper .header-text {
+  font-family: "Fira Sans", sans-serif;
 }
 
 #photography .container .content-area {
@@ -1889,8 +1911,389 @@ html .logo a {
   }
 }
 
-#random {
-  font-size: 100px;
-  color: pink;
+#homee .loading-bg {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+
+#homee .info-section {
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 54px;
+}
+
+#homee .info-section .logo {
+  border: 5px solid #4b21ff;
+}
+
+#homee .info-section .info-box {
+  position: absolute;
+  bottom: 60px;
+}
+
+#homee .info-section .info-box h4 {
+  font-size: 1.2rem;
+  color: #fefefe;
+  margin: 0.7rem 0;
+}
+
+#homee .info-section .info-box p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #fefefe;
+  margin: 0.2rem 0 1.6rem;
+}
+
+#homee .info-section .icon-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+#homee .info-section .icon-section a:hover {
+  color: #ffe621;
+}
+
+#homee .info-section .icon-section a:first-child {
+  padding: 0 10px 0 0;
+}
+
+#homee .content-area {
+  margin-left: 35%;
+  width: 65%;
+  background: #fefefe;
+  height: 100%;
+}
+
+#homee .content-area .img-container {
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  height: 79%;
+}
+
+#homee .content-area .img-container .user-img {
+  position: absolute;
+  width: 640px;
+  border-radius: 5px;
+  background-size: cover;
+  -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+  box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+}
+
+#homee .content-area .img-container .user-img #my_canvas {
+  border: 5px solid red;
+}
+
+#homee .content-area .profile-section {
+  vertical-align: top;
+  display: inline-block;
+  padding: 20% 0 0;
+}
+
+#homee .content-area .profile-section .profile h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+#homee .content-area .profile-section .profile h1 span {
+  color: #4b21ff;
+}
+
+#homee .content-area .profile-section .profile h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+}
+
+#homee .content-area .profile-section .profile p {
+  font-family: "Fira Sans", sans-serif;
+  color: #a9a9a9;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 2rem;
+}
+
+#homee footer {
+  display: none;
+  width: 100%;
+  background: #4b21ff;
+  height: 200px;
+}
+
+#homee footer .lists ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-top: 20px;
+}
+
+#homee footer .lists ul li {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+#homee footer hr {
+  margin-top: 20px;
+}
+
+#homee footer .icons {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+#homee footer .icons a {
+  color: white;
+}
+
+#homee footer .icons a span {
+  display: block;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #homee footer {
+    display: block;
+  }
+}
+
+@media (max-width: 534px) {
+  #home-back {
+    background: white;
+  }
+  #homee .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: white;
+  }
+  #homee .menu-icon .fa {
+    color: white;
+  }
+  #homee .content-area {
+    height: 900px;
+  }
+  #homee .content-area:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #homee .info-section {
+    width: 30%;
+    padding: 56px 30px;
+    height: 570px;
+  }
+  #homee .info-section .logo {
+    display: none;
+  }
+  #homee .info-section .icon-section a {
+    font-size: 1.4rem;
+  }
+  #homee .info-section .info-box {
+    display: none;
+  }
+  #homee .content-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  #homee .content-area .img-container {
+    padding-top: 60px;
+    width: 120px;
+    height: 550px;
+    margin-left: 4px;
+  }
+  #homee .content-area .img-container .user-img {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+  #homee .content-area .profile-section {
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+  }
+  #homee .content-area .profile-section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #homee .content-area .profile-section .profile {
+    width: 100%;
+    margin-left: 5px;
+  }
+  #homee .content-area .profile-section .profile .home-buttons-main {
+    display: none;
+  }
+  #homee .content-area .home-buttons {
+    display: block;
+    display: -ms-grid;
+    display: grid;
+    float: right;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0 0 0;
+  }
+  #homee .content-area .home-buttons .primary-btn, #homee .content-area .home-buttons .ghost-btn {
+    width: 90%;
+  }
+  #homee footer .lists ul li #footer-email {
+    display: block;
+  }
+  #homee footer .icons {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 534px) and (max-width: 767px) {
+  #homee .menu-icon {
+    top: -3px;
+    right: 20px;
+    color: white;
+  }
+  #homee .menu-icon .fa {
+    color: white;
+  }
+  #homee .content-area {
+    height: auto;
+  }
+  #homee .content-area:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #homee .info-section {
+    width: 30%;
+    padding: 56px 30px;
+  }
+  #homee .info-section .logo {
+    display: none;
+  }
+  #homee .info-section .icon-section a {
+    font-size: 1.4rem;
+  }
+  #homee .info-section .info-box {
+    display: none;
+  }
+  #homee .content-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  #homee .content-area .img-container {
+    padding-top: 56px;
+    width: 120px;
+    margin-left: 4px;
+  }
+  #homee .content-area .img-container .user-img {
+    position: static;
+    width: 100%;
+    height: calc(100% - 112px);
+  }
+  #homee .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0;
+    margin-right: 35px;
+  }
+  #homee .content-area .profile-section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #homee .info-section .info-box p #email {
+    display: block;
+  }
+  #homee .content-area .img-container {
+    padding: 56px 10px 0;
+  }
+  #homee .content-area .img-container .user-img {
+    height: calc(100% - 112px);
+    position: static;
+    width: 100%;
+  }
+  #homee .content-area .profile-section {
+    width: 60%;
+    float: right;
+    padding: 20% 0px 0 0;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #homee .content-area .profile-section {
+    margin-left: 20px;
+  }
+  #homee .content-area .img-container {
+    padding: 56px 10px 0;
+    float: left;
+  }
+  #homee .content-area .img-container .user-img {
+    height: calc(100% - 112px);
+    position: static;
+    width: 100%;
+  }
+  #homee .content-area .profile-section {
+    width: 70%;
+    float: left;
+    padding: 20% 10px 0;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #homee .content-area .img-container {
+    padding: 56px 20px 0;
+    float: left;
+  }
+  #homee .content-area .img-container .user-img {
+    height: calc(100% - 512px);
+  }
+  #homee .content-area .profile-section {
+    width: 70%;
+    float: left;
+    padding: 20% 60px 0;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #homee .content-area .profile-section {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1635px) {
+  .home .content-area .img-container .user-img {
+    top: 180px;
+    left: -350px;
+  }
+}
+
+@media (min-width: 1636px) {
+  #homee .content-area .img-container .user-img {
+    top: 56px;
+    height: calc(100% - 112px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

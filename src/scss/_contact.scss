@@ -71,6 +71,7 @@
             height: 100%;
 
             .form-section{ 
+                font-family: $font3;
                 position: absolute;
                 top: 56px;
                 left: -250px;
@@ -92,6 +93,7 @@
                 input[type="text"], 
                 input[type="email"], 
                 textarea{
+                    font-family: $font1;
                     width: 100%;
                     background: transparent;
                     border: none;
@@ -109,6 +111,7 @@
                 }
 
                 button[type="submit"]{
+                    font-family: $font3; 
                     background: $color1;
                     border: none;
                     -webkit-border-radius: 30px;
@@ -140,6 +143,7 @@
 
             .contact-info{
                 h1{
+                    font-family: $font3;
                     font-size: 2.3rem;
                     font-weight: 500;
                     line-height: 1.2;
@@ -161,12 +165,14 @@
                         box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
                     }
                     h5{
+                        font-family: $font2;
                         font-weight: 600;
                         font-size: 1.1rem;
                         margin: 0 0 1.5rem;
                     }
     
                     p{
+                        font-family: $font3;
                         color: $color4;
                         font-weight: 300;
                         line-height: 1.4;

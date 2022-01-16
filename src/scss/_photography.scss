@@ -33,7 +33,12 @@
         margin-left: 23px;
         .header-title{
             font-size: 1.5rem;
+            font-family: $font3;
         }
+        .header-text{
+            font-family: $font1;
+        }
+
     }
 
     .container{
@@ -49,6 +54,7 @@
 
                 h2{
                     font-size: 3rem;
+                    // font-family: $font3;
                     margin-bottom: 2rem;
                     text-align: center;
                 }
