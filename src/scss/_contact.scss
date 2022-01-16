@@ -1,5 +1,4 @@
 #contact{
-
     .info-section{
         width: 35%; 
         position: absolute;
@@ -9,16 +8,13 @@
         padding: 54px;
 
         .logo{
+            border: 10px solid $color1;
+
             #small-logo{
                 display: none;
+                margin-bottom: 65px;
             }
         }
-
-        // .logo{
-        //     #small-logo{
-        //         display: none;
-        //     }
-        // }
 
         // .logo img{
         //     border: 1px solid white;
@@ -102,10 +98,14 @@
                     border-bottom: 2px solid $color4;
                     margin-bottom: 4rem;
                     font-size: 1.1rem;
-                    text-transform: uppercase;
                     line-height: 1.2;
                     color: $color5; 
                     padding: 15px 0;
+                }
+
+                input[type="text"], textarea{
+                    text-transform: capitalize;
+
                 }
 
                 button[type="submit"]{
@@ -121,6 +121,12 @@
                     text-transform: uppercase;
                     width: 100%;
                     letter-spacing: 0.4rem;
+                    cursor: pointer;
+                }
+
+                #check-icon{
+                    color: chartreuse;
+                    transition: all 0.5s ease-in-out;
                 }
             }
         }
@@ -170,6 +176,54 @@
             }
         }
     }
+
+    footer{
+        display: none;
+        width: 100%;
+        background: $color1; 
+        // border: 1px solid black; 
+        height: 200px;
+
+        .lists ul{
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+            // border: 1px solid white;
+            display: flex; 
+            width: 90%;
+            padding-top: 20px;
+            
+
+            li{
+                width: 100%;
+                // border: 1px solid red;
+                // width: 300px;
+                color: white;
+                margin: 0 auto; 
+
+            }
+        }
+
+        hr{
+            margin-top: 20px;
+        }
+
+        .icons{
+            font-size: 2.5rem;
+            text-align: center;
+            letter-spacing: 15px;
+
+
+            a{
+                color: white;
+
+                span{
+                    display: block;
+                }
+            }
+
+        }
+    }
 }
 
 
@@ -195,21 +249,25 @@
         .info-section{
             padding: 10px 20px;
             position: static;
+            height: 75px;
             // left: ;
             // bottom: ;
             // top: ;
             // width: ;
 
             .logo{
-                height: 50px;
-                width: 70px;
-                font-size: 1rem;
+                // height: 50px;
+                // width: 70px;
+                // font-size: 1rem;
 
                 #big-logo{
                     display: none;
                 }
                 #small-logo{
                     display: block;
+                    margin-top: 18px; 
+                    margin-right: 49px;
+
                 }
             }
             .info-box{
@@ -239,6 +297,10 @@
                 
             }
         }
+
+        footer{
+            display: block;
+        }
     }
 }
 //phone
@@ -257,7 +319,7 @@
         .info-section{
             padding: 10px 20px;
             position: static;
-            height: 125px;
+            // height: 125px;
 
             // .logo{
             //     height: 50px;
@@ -265,12 +327,12 @@
             //     font-size: 2.5rem;
             // }
 
-            .logo img{
-                height: 150px;
-                width: 200px;
-                margin: 30px 0px 0 130px;
-                // margin-left: 130px;
-            }
+            // .logo img{
+            //     height: 150px;
+            //     width: 200px;
+            //     margin: 30px 0px 0 130px;
+            //     // margin-left: 130px;
+            // }
 
             .info-box{
                 display: none;
@@ -315,6 +377,10 @@
                     }
                 }
             }
+        }
+
+        footer{
+            display: block;
         }
 
     }

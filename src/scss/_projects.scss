@@ -3,8 +3,11 @@
         width: 20%;
 
         .logo{
+            border: 10px solid $color1;
+
             #small-logo{
                 display: none;
+                margin-bottom: 65px;
             }
         }
     }
@@ -133,6 +136,54 @@
             }
         }
     }
+
+    footer{
+        display: none;
+        width: 100%;
+        background: $color1; 
+        // border: 1px solid black; 
+        height: 200px;
+
+        .lists ul{
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+            // border: 1px solid white;
+            display: flex; 
+            width: 90%;
+            padding-top: 20px;
+            
+
+            li{
+                width: 100%;
+                // border: 1px solid red;
+                // width: 300px;
+                color: white;
+                margin: 0 auto; 
+
+            }
+        }
+
+        hr{
+            margin-top: 20px;
+        }
+
+        .icons{
+            font-size: 2.5rem;
+            text-align: center;
+            letter-spacing: 15px;
+            // padding-bottom: 60px;
+
+            a{
+                color: white;
+
+                span{
+                    display: block;
+                }
+            }
+
+        }
+    }
 }
 
 //phone
@@ -144,15 +195,16 @@
             height: 75px;
 
             .logo{
-                height: 50px;
-                width: 200px;
-                font-size: 2rem;
+                // height: 50px;
+                // width: 200px;
+                // font-size: 2rem;
 
                 #big-logo{
                     display: none;
                 }
                 #small-logo{
                     display: block;
+                    margin-top: 18px; 
                 }
             }
 
@@ -194,18 +246,22 @@
                 color: white;
             }
         }
+
+        footer{
+            display: block;
+        }
     }
 }
 //tablet
 @media (min-width: 768px) and (max-width:991px){
     #projects{
         .info-section{
-            padding: 0;
+            // padding: 0;
 
-            .logo{
-                margin: 0 auto;
-                margin-top: 50px;
-            }
+            // .logo{
+            //     margin: 0 auto;
+            //     margin-top: 50px;
+            // }
             .info-box{
                 width: 100%;
                 // padding: 56px 10px;
@@ -246,7 +302,7 @@
     }
 }
 //laptops
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 1000px) and (max-width: 1199px){
     #projects{
         .info-section{
             padding: 0;

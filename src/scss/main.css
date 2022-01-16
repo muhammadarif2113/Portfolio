@@ -380,6 +380,54 @@ html .logo a {
   margin: 0 0 2rem;
 }
 
+#homee footer {
+  display: none;
+  width: 100%;
+  background: #4b21ff;
+  height: 200px;
+}
+
+#homee footer .lists ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-top: 20px;
+}
+
+#homee footer .lists ul li {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+#homee footer hr {
+  margin-top: 20px;
+}
+
+#homee footer .icons {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+#homee footer .icons a {
+  color: white;
+}
+
+#homee footer .icons a span {
+  display: block;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #homee footer {
+    display: block;
+  }
+}
+
 @media (max-width: 534px) {
   #home-back {
     background: white;
@@ -393,7 +441,7 @@ html .logo a {
     color: white;
   }
   #homee .content-area {
-    height: auto;
+    height: 900px;
   }
   #homee .content-area:after {
     content: "";
@@ -459,6 +507,12 @@ html .logo a {
   }
   #homee .content-area .home-buttons .primary-btn, #homee .content-area .home-buttons .ghost-btn {
     width: 90%;
+  }
+  #homee footer .lists ul li #footer-email {
+    display: block;
+  }
+  #homee footer .icons {
+    margin-top: 20px;
   }
 }
 
@@ -600,8 +654,13 @@ html .logo a {
   width: 20%;
 }
 
+#resume .info-section .logo {
+  border: 10px solid #4b21ff;
+}
+
 #resume .info-section .logo #small-logo {
   display: none;
+  margin-bottom: 65px;
 }
 
 #resume .content-area {
@@ -659,6 +718,57 @@ html .logo a {
   margin-bottom: 1rem;
 }
 
+#resume footer {
+  display: none;
+  width: 100%;
+  background: #4b21ff;
+  height: 200px;
+}
+
+#resume footer .lists ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-top: 20px;
+}
+
+#resume footer .lists ul li {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+#resume footer hr {
+  margin-top: 20px;
+}
+
+#resume footer .icons {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+#resume footer .icons a {
+  color: white;
+}
+
+#resume footer .icons a span {
+  display: block;
+}
+
+@media (max-width: 534px) {
+  footer .lists ul li #footer-email {
+    display: block;
+  }
+  footer .icons {
+    margin-top: 20px;
+  }
+}
+
 @media (min-width: 0px) and (max-width: 999px) {
   #resume .menu-icon {
     top: -3px;
@@ -673,16 +783,12 @@ html .logo a {
     position: static;
     height: 75px;
   }
-  #resume .info-section .logo {
-    height: 50px;
-    width: 200px;
-    font-size: 2rem;
-  }
   #resume .info-section .logo #big-logo {
     display: none;
   }
   #resume .info-section .logo #small-logo {
     display: block;
+    margin-top: 18px;
   }
   #resume .info-section .info-box {
     display: none;
@@ -710,16 +816,12 @@ html .logo a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  #resume footer {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #resume .info-section {
-    padding: 0;
-  }
-  #resume .info-section .logo {
-    margin: 0 auto;
-    margin-top: 50px;
-  }
   #resume .info-section .info-box {
     width: 100%;
     text-align: center;
@@ -744,7 +846,7 @@ html .logo a {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   #resume .info-section {
     padding: 0;
   }
@@ -786,8 +888,13 @@ html .logo a {
   width: 20%;
 }
 
+#projects .info-section .logo {
+  border: 10px solid #4b21ff;
+}
+
 #projects .info-section .logo #small-logo {
   display: none;
+  margin-bottom: 65px;
 }
 
 #projects .content-area {
@@ -922,22 +1029,60 @@ html .logo a {
   margin-bottom: 1rem;
 }
 
+#projects footer {
+  display: none;
+  width: 100%;
+  background: #4b21ff;
+  height: 200px;
+}
+
+#projects footer .lists ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-top: 20px;
+}
+
+#projects footer .lists ul li {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+#projects footer hr {
+  margin-top: 20px;
+}
+
+#projects footer .icons {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+#projects footer .icons a {
+  color: white;
+}
+
+#projects footer .icons a span {
+  display: block;
+}
+
 @media (min-width: 0px) and (max-width: 999px) {
   #projects .info-section {
     padding: 10px 20px;
     position: static;
     height: 75px;
   }
-  #projects .info-section .logo {
-    height: 50px;
-    width: 200px;
-    font-size: 2rem;
-  }
   #projects .info-section .logo #big-logo {
     display: none;
   }
   #projects .info-section .logo #small-logo {
     display: block;
+    margin-top: 18px;
   }
   #projects .info-section .info-box {
     display: none;
@@ -965,16 +1110,12 @@ html .logo a {
   #projects .menu-icon .fa {
     color: white;
   }
+  #projects footer {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #projects .info-section {
-    padding: 0;
-  }
-  #projects .info-section .logo {
-    margin: 0 auto;
-    margin-top: 50px;
-  }
   #projects .info-section .info-box {
     width: 100%;
     text-align: center;
@@ -997,7 +1138,7 @@ html .logo a {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   #projects .info-section {
     padding: 0;
   }
@@ -1060,8 +1201,13 @@ html .logo a {
   padding: 54px;
 }
 
+#contact .info-section .logo {
+  border: 10px solid #4b21ff;
+}
+
 #contact .info-section .logo #small-logo {
   display: none;
+  margin-bottom: 65px;
 }
 
 #contact .info-section .info-box {
@@ -1139,10 +1285,13 @@ html .logo a {
   border-bottom: 2px solid #a9a9a9;
   margin-bottom: 4rem;
   font-size: 1.1rem;
-  text-transform: uppercase;
   line-height: 1.2;
   color: #bdbdbd;
   padding: 15px 0;
+}
+
+#contact .content-area .img-container .form-section input[type="text"], #contact .content-area .img-container .form-section textarea {
+  text-transform: capitalize;
 }
 
 #contact .content-area .img-container .form-section button[type="submit"] {
@@ -1156,6 +1305,13 @@ html .logo a {
   text-transform: uppercase;
   width: 100%;
   letter-spacing: 0.4rem;
+  cursor: pointer;
+}
+
+#contact .content-area .img-container .form-section #check-icon {
+  color: chartreuse;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #contact .content-area .contact-section {
@@ -1203,6 +1359,48 @@ html .logo a {
   margin: 0 0 2rem;
 }
 
+#contact footer {
+  display: none;
+  width: 100%;
+  background: #4b21ff;
+  height: 200px;
+}
+
+#contact footer .lists ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-top: 20px;
+}
+
+#contact footer .lists ul li {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+#contact footer hr {
+  margin-top: 20px;
+}
+
+#contact footer .icons {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+#contact footer .icons a {
+  color: white;
+}
+
+#contact footer .icons a span {
+  display: block;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   #contact .menu-icon {
     top: -3px;
@@ -1223,17 +1421,15 @@ html .logo a {
   #contact .info-section {
     padding: 10px 20px;
     position: static;
-  }
-  #contact .info-section .logo {
-    height: 50px;
-    width: 70px;
-    font-size: 1rem;
+    height: 75px;
   }
   #contact .info-section .logo #big-logo {
     display: none;
   }
   #contact .info-section .logo #small-logo {
     display: block;
+    margin-top: 18px;
+    margin-right: 49px;
   }
   #contact .info-section .info-box {
     display: none;
@@ -1257,6 +1453,9 @@ html .logo a {
     float: left;
     padding: 20% 20px 0;
   }
+  #contact footer {
+    display: block;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1271,12 +1470,6 @@ html .logo a {
   #contact .info-section {
     padding: 10px 20px;
     position: static;
-    height: 125px;
-  }
-  #contact .info-section .logo img {
-    height: 150px;
-    width: 200px;
-    margin: 30px 0px 0 130px;
   }
   #contact .info-section .info-box {
     display: none;
@@ -1309,6 +1502,9 @@ html .logo a {
     margin-right: 13px;
   }
   #contact .content-area .contact-section .contact-info .contact-box span {
+    display: block;
+  }
+  #contact footer {
     display: block;
   }
 }
@@ -1606,6 +1802,47 @@ html .logo a {
   100% {
     top: 50%;
   }
+}
+
+#photography footer {
+  width: 100%;
+  background: black;
+  height: 200px;
+}
+
+#photography footer .lists ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-top: 20px;
+}
+
+#photography footer .lists ul li {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+#photography footer hr {
+  margin-top: 20px;
+}
+
+#photography footer .icons {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 15px;
+}
+
+#photography footer .icons a {
+  color: white;
+}
+
+#photography footer .icons a span {
+  display: block;
 }
 
 @media (max-width: 700px) {

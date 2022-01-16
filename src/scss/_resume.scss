@@ -1,20 +1,13 @@
 #resume{
-    // .loading-bg{
-    //     background: white;
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100vh;
-    //     width: 100vw;
-    //     transform: translate(0, 100%); 
-    //     z-index: 100;
-    // }
     .info-section{
         width: 20%;
         
         .logo{
+            border: 10px solid $color1;
+            
             #small-logo{
                 display: none;
+                margin-bottom: 65px;
             }
         }
     }
@@ -72,8 +65,72 @@
             }
         }
     }
+
+    footer{
+        display: none;
+        width: 100%;
+        background: $color1; 
+        // border: 1px solid black; 
+        height: 200px;
+
+        .lists ul{
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+            // border: 1px solid white;
+            display: flex; 
+            width: 90%;
+            padding-top: 20px;
+            
+
+            li{
+                width: 100%;
+                // border: 1px solid red;
+                // width: 300px;
+                color: white;
+                margin: 0 auto; 
+
+            }
+        }
+
+        hr{
+            margin-top: 20px;
+        }
+
+        .icons{
+            font-size: 2.5rem;
+            text-align: center;
+            letter-spacing: 15px;
+            // padding-bottom: 60px;
+
+            a{
+                color: white;
+
+                span{
+                    display: block;
+                }
+            }
+
+        }
+    }
 }
 
+@media (max-width: 534px) {
+    footer{
+        .lists ul{
+            li{
+                #footer-email{
+                    display: block;
+                }
+
+            }
+        }
+
+        .icons{
+            margin-top: 20px;
+        }
+    }
+}
 //phone
 @media (min-width: 0px) and (max-width: 999px){
     // html, body{
@@ -97,14 +154,15 @@
             height: 75px;
 
             .logo{
-                height: 50px;
-                width: 200px;
-                font-size: 2rem;
+                // height: 50px;
+                // width: 200px;
+                // font-size: 2rem;
                 #big-logo{
                     display: none;
                 }
                 #small-logo{
                     display: block;
+                    margin-top: 18px; 
                 }
             }
 
@@ -139,6 +197,10 @@
             }
 
         }
+
+        footer{
+            display: block;
+        }
     }
 }
 //tablet
@@ -146,11 +208,16 @@
     #resume{
         .info-section{
             // width: 300px;
-            padding: 0;
+            // height: 82px;
+            // padding: 0;
 
             .logo{
-                margin: 0 auto;
-                margin-top: 50px;
+                // margin: 0 auto;
+                // margin-top: 50px;
+                // #small-logo{
+                //     border: 1px solid black;
+                //     margin-top: 100px;
+                // }
             }
             .info-box{
                 width: 100%;
@@ -186,7 +253,7 @@
     }
 }
 //laptops
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 1000px) and (max-width: 1199px){
     #resume{
         .info-section{
             // width: 300px;

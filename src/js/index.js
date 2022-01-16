@@ -16,6 +16,18 @@ navBar.addEventListener('click', ()=> {
     }
 })
 
+console.log(document.URL); //baseURI
+console.log(document.querySelector('nav').children); 
+var links = document.querySelector('nav').children; 
+
+
+for (link of links){
+    if(document.URL == link.href){
+        link.style.color = 'black'; 
+    }
+}
+
+
 
 
 // barba.hooks.beforeEnter((datas) => {

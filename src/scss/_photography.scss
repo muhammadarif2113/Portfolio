@@ -141,6 +141,54 @@
             }
         }
     }
+
+    footer{
+        // display: none;
+        width: 100%;
+        background: black; 
+        // border: 1px solid black; 
+        height: 200px;
+
+        .lists ul{
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+            // border: 1px solid white;
+            display: flex; 
+            width: 90%;
+            padding-top: 20px;
+            
+
+            li{
+                width: 100%;
+                // border: 1px solid red;
+                // width: 300px;
+                color: white;
+                margin: 0 auto; 
+
+            }
+        }
+
+        hr{
+            margin-top: 20px;
+        }
+
+        .icons{
+            font-size: 2.5rem;
+            text-align: center;
+            letter-spacing: 15px;
+            // padding-bottom: 60px;
+
+            a{
+                color: white;
+
+                span{
+                    display: block;
+                }
+            }
+
+        }
+    }
 }
 
 
