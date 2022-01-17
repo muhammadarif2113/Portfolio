@@ -20,57 +20,137 @@
         height: 100%; 
         overflow: hidden;
         background: white; //$color3;
-    }
+        // padding: 30px 0;
+        display: flex;
 
-    .category{
-        margin-bottom: 56px;
-
-        
-        h1{
-            font-family: $font3;
-            font-weight: 700;
-            font-size: 2rem;
-            text-transform: uppercase;
-            margin-bottom: 56px;
-            text-decoration: underline;
+        .resume-pdf{
+            height: 100%;
+            width: 45%;
+            min-width: 700px;
+            padding: 52px 20px; 
+            background: #F0F0F0;
+            
+            iframe{
+                // height: 100%;
+                display: block; 
+                margin: 0 auto;
+                min-width: auto;
+                // margin-top: 55px;
+                // padding: 30% 0;
+            }
         }
-    
-        .xp-section{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 56px;
-            grid-row-gap: 30px;
-            max-width: 1000px;
-    
-            .xp-box{
-                padding: 30px;
-                transition: all 0.5s ease-in-out;
-                &:hover{
-                    -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
-                    -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
-                    box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
-                }
+
+        .scroll-section{
+            
+            width: 55%;
+
+
+            .category-ctn{
+                width: 100%;
+                height: 100%;
+                .category{
+                    margin-bottom: 56px;
+            
+                    
+                    h1{
+                        font-family: $font3;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        margin-bottom: 56px;
+                        text-decoration: underline;
+                    }
                 
-    
-                h5{
-                    font-family: $font3;
-                    font-weight: 600;
-                    font-size: 1.3rem;
-                    margin-bottom: 1.4rem;
-                }
-    
-                p{
-                    font-family: $font2; 
-                    font-weight: 300;
-                    font-size: 1rem; 
-                    margin-bottom: 1rem;
-                }
-                .dates{
-                    font-family: $font1;
+                    .xp-section{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-column-gap: 56px;
+                        grid-row-gap: 30px;
+                        max-width: 1000px;
+                
+                        .xp-box{
+                            padding: 30px;
+                            // min-width: 415px;
+                            transition: all 0.5s ease-in-out;
+                            &:hover{
+                                -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+                                -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+                                box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+                            }
+                            
+                
+                            h5{
+                                font-family: $font3;
+                                font-weight: 600;
+                                font-size: 1.3rem;
+                                margin-bottom: 1.4rem;
+                            }
+                
+                            p{
+                                font-family: $font2; 
+                                font-weight: 300;
+                                font-size: 1rem; 
+                                margin-bottom: 1rem;
+                            }
+                            .dates{
+                                font-family: $font1;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+
+    // .category{
+    //     margin-bottom: 56px;
+
+        
+    //     h1{
+    //         font-family: $font3;
+    //         font-weight: 700;
+    //         font-size: 2rem;
+    //         text-transform: uppercase;
+    //         margin-bottom: 56px;
+    //         text-decoration: underline;
+    //     }
+    
+    //     .xp-section{
+    //         display: grid;
+    //         grid-template-columns: 1fr 1fr;
+    //         grid-column-gap: 56px;
+    //         grid-row-gap: 30px;
+    //         max-width: 1000px;
+    
+    //         .xp-box{
+    //             padding: 30px;
+    //             transition: all 0.5s ease-in-out;
+    //             &:hover{
+    //                 -webkit-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    //                 -moz-box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    //                 box-shadow: 0px 20px 74px 6px rgba(0,0,0,0.12);
+    //             }
+                
+    
+    //             h5{
+    //                 font-family: $font3;
+    //                 font-weight: 600;
+    //                 font-size: 1.3rem;
+    //                 margin-bottom: 1.4rem;
+    //             }
+    
+    //             p{
+    //                 font-family: $font2; 
+    //                 font-weight: 300;
+    //                 font-size: 1rem; 
+    //                 margin-bottom: 1rem;
+    //             }
+    //             .dates{
+    //                 font-family: $font1;
+    //             }
+    //         }
+    //     }
+    // }
 
     footer{
         display: none;
@@ -122,6 +202,11 @@
 }
 
 @media (max-width: 534px) {
+    .content-area{
+        .resume-pdf{
+            min-width: none;
+        }
+    }
     footer{
         .lists ul{
             li{
@@ -138,7 +223,7 @@
     }
 }
 //phone
-@media (min-width: 0px) and (max-width: 999px){
+@media (min-width: 0px) and (max-width: 1475px){
     // html, body{
     //     height: auto;
     // }
@@ -193,15 +278,23 @@
                 width: 100%;
                 height: auto;
                 overflow: auto;
-            }
-            .category{
-                width: 100%;
-                .xp-section{
-                    grid-template-columns: 1fr;
 
+                .category-ctn{
+                    margin-left: 20px;
+
+                    .category{
+                        width: 100%;
+                        .xp-section{
+                            grid-template-columns: 1fr;
+        
+                        }
+                    }
                 }
             }
 
+
+
+            
         }
 
         footer{
@@ -242,17 +335,30 @@
         }
     }
 }
+
+@media (max-width: 1140px){
+    #resume{
+        .content-area{
+            display: block;
+            .resume-pdf{
+                margin: 0 auto;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+}
 //laptops
 @media (min-width: 1000px) and (max-width: 1199px){
     #resume{
-        .info-section{
-            // width: 300px;
-            padding: 0;
-        }
-        .logo{
-            margin: 0 auto;
-            margin-top: 50px;
-        }
+        // .info-section{
+        //     // width: 300px;
+        //     padding: 0;
+        // }
+        // .logo{
+        //     margin: 0 auto;
+        //     margin-top: 50px;
+        // }
         .info-box{
             width: 100%;
             text-align: center;
@@ -306,6 +412,11 @@
         }
     }
 }
+
+// @media (max-width: 1715px) {
+
+    
+// }
 // @media (max-width: 1600px){
 
 

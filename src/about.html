@@ -55,7 +55,7 @@
 
             <section class="content-area">
                 <div class="img-container">
-                    <div class="user-img">
+                    <div class="user-imgg">
                         <!-- <canvas id="my_canvas"></canvas> -->
                         <!-- <a href="./img/resume.pdf" download="resume"><canvas id="my_canvas"></canvas></a> -->
                         <iframe id="pdf-js-viewer" src="./img/resume.pdf" title="webviewer" frameborder="0" width="650" height="910"></iframe>
@@ -64,24 +64,59 @@
             
                 <div class="profile-section">
                     <div class="profile">
-                        <h1>Muhammad <br> <span> Arif</span></h1>
-                        <h5>Web Developer</h5>
-                        <p>Hi my name is Muhammad Arif this is my page and i'm from Brooklyn, NYHi my name is Muhammad Arif this is my page and i'm from Brooklyn, NY Hi my name is Muhammad Arif this is my page and i'm from Brooklyn, NY Hi my name is Muhammad Arif this is my page and i'm from Brooklyn, NY</p>
-                        <div class="home-buttons-main">
-                            <a href="/resume.html" class="primary-btn">Resume</a>
-                            <a href="/projects.html" class="ghost-btn">Projects</a> <br>
-                            <a href="/photography.html" class="primary-btn">Photography</a>
-                            <a href="/contact.html" class="ghost-btn">Contact</a>
+                        <div class="s">
+
+                            <div class="category">
+                                <div class="title">
+                                    <h1>Education</h1>
+                                </div>
+                    
+                                <div class="xp-section">
+                                    <div class="xp-box">
+                                        <h5>Bachelor of Science:<br>Information Systems</h5>
+                                        <p>Brooklyn College of The City University of New York</p>
+                                        <p class="dates">02/2018-06/2021</p>
+                                    </div>
+                    
+                                    <div class="xp-box">
+                                        <h5>Software Engineering Career Track in Web Development</h5>
+                                        <p>Queensborough Community College</p>
+                                        <p class="dates">10/2021-12/2021</p>
+                                    </div>
+        
+                                    <div class="xp-box">
+                                        <h5>Advanced Regents Diploma</h5>
+                                        <p>Fort Hamilton High School</p>
+                                        <p class="dates">09/2013-06/2017</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="category">
+                                <div class="title">
+                                    <h1>Work Experience</h1>
+                                </div>
+                    
+                                <div class="xp-section">
+                                    <div class="xp-box">
+                                        <h5>Sector Software</h5>
+                                        <p>Software Engineering Intern</p>
+                                        <p class="dates">09/2020-12/2020</p>
+                                    </div>
+                    
+                                    <div class="xp-box">
+                                        <h5>CVS Pharmacy</h5>
+                                        <p>Shift Supervisor</p>
+                                        <p class="dates">10/2017-10/2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
                         </div>
     
                     </div>
 
-                    <div class="home-buttons" style="font-size: 15px;" hidden>
-                        <a href="/resume.html" class="primary-btn">Resume</a>
-                        <a href="/projects.html" class="ghost-btn">Projects</a> <br>
-                        <a href="/photography.html" id="photo-but" class="primary-btn">Gallery</a>
-                        <a href="/contact.html" class="ghost-btn">Contact</a>
-                    </div>
+
 
                 </div>
 
@@ -121,7 +156,7 @@
 
     
 
-    <script>
+    <!-- <script>
         pdfjsLib.getDocument('./img/resume.pdf').then(doc => {
             console.log("this file has " + doc._pdfInfo.numPages + " pages"); 
 
@@ -138,6 +173,6 @@
                 });
             }); 
         }); 
-    </script>
+    </script> -->
 </body>
 </html>
