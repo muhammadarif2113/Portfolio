@@ -2005,7 +2005,6 @@ html .logo a {
 }
 
 #homee .content-area {
-  border: 2px solid red;
   margin-left: 35%;
   width: 65%;
   background: #fefefe;
@@ -2029,13 +2028,11 @@ html .logo a {
 }
 
 #homee .content-area .profile-section {
-  border: 2px solid red;
   padding: 20% 0 0;
   height: 100%;
 }
 
 #homee .content-area .profile-section .profile {
-  border: 2px solid green;
   position: relative;
 }
 
