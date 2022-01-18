@@ -226,6 +226,7 @@ html .logo a {
 }
 
 .info-section {
+  font-family: sans-serif;
   width: 35%;
   position: absolute;
   top: 0;
@@ -653,6 +654,10 @@ html .logo a {
   }
 }
 
+#resume .menu-icon {
+  top: 1px;
+}
+
 #resume .info-section {
   width: 20%;
 }
@@ -682,7 +687,6 @@ html .logo a {
 #resume .content-area .resume-pdf {
   height: 100%;
   width: 45%;
-  min-width: 700px;
   padding: 52px 20px;
   background: #F0F0F0;
 }
@@ -690,7 +694,8 @@ html .logo a {
 #resume .content-area .resume-pdf iframe {
   display: block;
   margin: 0 auto;
-  min-width: auto;
+  width: 100%;
+  height: 100%;
 }
 
 #resume .content-area .scroll-section {
@@ -797,9 +802,6 @@ html .logo a {
 }
 
 @media (max-width: 534px) {
-  .content-area .resume-pdf {
-    min-width: none;
-  }
   footer .lists ul li #footer-email {
     display: block;
   }
@@ -845,8 +847,6 @@ html .logo a {
   #resume .content-area .scroll-section {
     padding: 50px 20px;
     width: 100%;
-    height: auto;
-    overflow: auto;
   }
   #resume .content-area .scroll-section .category-ctn {
     margin-left: 20px;
@@ -927,6 +927,20 @@ html .logo a {
   }
   #resume .info-section .info-box span {
     display: block;
+  }
+}
+
+@media (min-width: 1140px) and (max-width: 3000px) {
+  #resume .content-area .resume-pdf {
+    min-width: 820px;
+    height: auto;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1140px) {
+  #resume .content-area .resume-pdf {
+    max-width: 820px;
+    background: none;
   }
 }
 
@@ -1064,6 +1078,31 @@ html .logo a {
   opacity: 0;
 }
 
+#projects .projects-section .work-section .project-box .project-about {
+  position: absolute;
+  top: 450px;
+  right: 43px;
+  width: 90%;
+  text-align: center;
+  min-width: 234px;
+}
+
+#projects .projects-section .work-section .project-box .project-about .project-ctn h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+  padding: 5px 0 5px 0;
+}
+
+#projects .projects-section .work-section .project-box .project-about .project-ctn p {
+  padding: 5px 0 5px 0;
+  font-family: "Playfair Display", serif;
+}
+
+#projects .projects-section .work-section .project-box .project-about .project-ctn .github-link {
+  font-size: 2rem;
+}
+
 #projects .projects-section .work-section .project-box h5 {
   font-weight: 600;
   font-size: 1.3rem;
@@ -1116,6 +1155,12 @@ html .logo a {
 
 #projects footer .icons a span {
   display: block;
+}
+
+@media (min-width: 0px) and (max-width: 860px) {
+  #projects .project-about {
+    left: 13px;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 999px) {
@@ -1226,7 +1271,7 @@ html .logo a {
     grid-column: 1fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-row-gap: 50px;
+    grid-row-gap: 320px;
   }
   #projects .content-area .scroll-section .projects-section .work-section .project-box .grey-bg {
     position: absolute;
@@ -1944,385 +1989,6 @@ html .logo a {
   }
   #photography .container .content-area .white-bg .img-wrapper .h-1 .h-2, #photography .container .content-area .white-bg .img-wrapper .h-3 {
     grid-row: span 2;
-  }
-}
-
-#homee .loading-bg {
-  background: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-}
-
-#homee .info-section {
-  width: 35%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 54px;
-}
-
-#homee .info-section .logo {
-  border: 5px solid #4b21ff;
-}
-
-#homee .info-section .info-box {
-  position: absolute;
-  bottom: 60px;
-}
-
-#homee .info-section .info-box h4 {
-  font-size: 1.2rem;
-  color: #fefefe;
-  margin: 0.7rem 0;
-}
-
-#homee .info-section .info-box p {
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: #fefefe;
-  margin: 0.2rem 0 1.6rem;
-}
-
-#homee .info-section .icon-section a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 0 10px;
-}
-
-#homee .info-section .icon-section a:hover {
-  color: #ffe621;
-}
-
-#homee .info-section .icon-section a:first-child {
-  padding: 0 10px 0 0;
-}
-
-#homee .content-area {
-  margin-left: 35%;
-  width: 65%;
-  background: #fefefe;
-  height: 100%;
-}
-
-#homee .content-area .img-container {
-  display: inline-block;
-  width: 25%;
-  position: relative;
-  height: 79%;
-}
-
-#homee .content-area .img-container .user-imgg {
-  position: absolute;
-  width: 640px;
-  border-radius: 5px;
-  background-size: cover;
-  -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
-  box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
-}
-
-#homee .content-area .profile-section {
-  padding: 20% 0 0;
-  height: 100%;
-}
-
-#homee .content-area .profile-section .profile {
-  position: relative;
-}
-
-#homee .content-area .profile-section .profile .s {
-  height: 100%;
-  border: 1px solid blue;
-}
-
-#homee .content-area .profile-section .profile .s .category {
-  border: 2px solid orange;
-}
-
-#homee .content-area .profile-section .profile .s .category .xp-section {
-  border: 2px solid black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-column-gap: 56px;
-  grid-row-gap: 30px;
-  max-width: 1000px;
-}
-
-#homee footer {
-  display: none;
-  width: 100%;
-  background: #4b21ff;
-  height: 200px;
-}
-
-#homee footer .lists ul {
-  list-style-type: none;
-  text-align: center;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  padding-top: 20px;
-}
-
-#homee footer .lists ul li {
-  width: 100%;
-  color: white;
-  margin: 0 auto;
-}
-
-#homee footer hr {
-  margin-top: 20px;
-}
-
-#homee footer .icons {
-  font-size: 2.5rem;
-  text-align: center;
-  letter-spacing: 15px;
-}
-
-#homee footer .icons a {
-  color: white;
-}
-
-#homee footer .icons a span {
-  display: block;
-}
-
-@media (min-width: 0px) and (max-width: 767px) {
-  #homee footer {
-    display: block;
-  }
-}
-
-@media (max-width: 534px) {
-  #home-back {
-    background: white;
-  }
-  #homee .menu-icon {
-    top: -3px;
-    right: 20px;
-    color: white;
-  }
-  #homee .menu-icon .fa {
-    color: white;
-  }
-  #homee .content-area {
-    height: 900px;
-  }
-  #homee .content-area:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #homee .info-section {
-    width: 30%;
-    padding: 56px 30px;
-    height: 570px;
-  }
-  #homee .info-section .logo {
-    display: none;
-  }
-  #homee .info-section .icon-section a {
-    font-size: 1.4rem;
-  }
-  #homee .info-section .info-box {
-    display: none;
-  }
-  #homee .content-area {
-    margin-left: 0;
-    width: 100%;
-  }
-  #homee .content-area .img-container {
-    padding-top: 60px;
-    width: 120px;
-    height: 550px;
-    margin-left: 4px;
-  }
-  #homee .content-area .img-container .user-img {
-    position: static;
-    width: 100%;
-    height: 100%;
-  }
-  #homee .content-area .profile-section {
-    text-align: center;
-    width: 60%;
-    height: 100%;
-    float: right;
-    margin-right: 20px;
-  }
-  #homee .content-area .profile-section:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #homee .content-area .profile-section .profile {
-    width: 100%;
-    margin-left: 5px;
-  }
-  #homee .content-area .profile-section .profile .home-buttons-main {
-    display: none;
-  }
-  #homee .content-area .home-buttons {
-    display: block;
-    display: -ms-grid;
-    display: grid;
-    float: right;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    margin: 20px 0 0 0;
-  }
-  #homee .content-area .home-buttons .primary-btn, #homee .content-area .home-buttons .ghost-btn {
-    width: 90%;
-  }
-  #homee footer .lists ul li #footer-email {
-    display: block;
-  }
-  #homee footer .icons {
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: 534px) and (max-width: 767px) {
-  #homee .menu-icon {
-    top: -3px;
-    right: 20px;
-    color: white;
-  }
-  #homee .menu-icon .fa {
-    color: white;
-  }
-  #homee .content-area {
-    height: auto;
-  }
-  #homee .content-area:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #homee .info-section {
-    width: 30%;
-    padding: 56px 30px;
-  }
-  #homee .info-section .logo {
-    display: none;
-  }
-  #homee .info-section .icon-section a {
-    font-size: 1.4rem;
-  }
-  #homee .info-section .info-box {
-    display: none;
-  }
-  #homee .content-area {
-    margin-left: 0;
-    width: 100%;
-  }
-  #homee .content-area .img-container {
-    padding-top: 56px;
-    width: 120px;
-    margin-left: 4px;
-  }
-  #homee .content-area .img-container .user-img {
-    position: static;
-    width: 100%;
-    height: calc(100% - 112px);
-  }
-  #homee .content-area .profile-section {
-    width: 70%;
-    float: right;
-    padding: 20% 20px 0;
-    margin-right: 35px;
-  }
-  #homee .content-area .profile-section:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #homee .info-section .info-box p #email {
-    display: block;
-  }
-  #homee .content-area .img-container {
-    padding: 56px 10px 0;
-  }
-  #homee .content-area .img-container .user-img {
-    height: calc(100% - 112px);
-    position: static;
-    width: 100%;
-  }
-  #homee .content-area .profile-section {
-    width: 60%;
-    float: right;
-    padding: 20% 0px 0 0;
-    margin-right: 50px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  #homee .content-area .profile-section {
-    margin-left: 20px;
-  }
-  #homee .content-area .img-container {
-    padding: 56px 10px 0;
-    float: left;
-  }
-  #homee .content-area .img-container .user-img {
-    height: calc(100% - 112px);
-    position: static;
-    width: 100%;
-  }
-  #homee .content-area .profile-section {
-    width: 70%;
-    float: left;
-    padding: 20% 10px 0;
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #homee .content-area .img-container {
-    padding: 56px 20px 0;
-    float: left;
-  }
-  #homee .content-area .img-container .user-img {
-    height: calc(100% - 512px);
-  }
-  #homee .content-area .profile-section {
-    width: 70%;
-    float: left;
-    padding: 20% 60px 0;
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  #homee .content-area .profile-section {
-    margin-left: 35px;
-  }
-}
-
-@media (max-width: 1635px) {
-  .home .content-area .img-container .user-img {
-    top: 180px;
-    left: -350px;
-  }
-}
-
-@media (min-width: 1636px) {
-  #homee .content-area .img-container .user-img {
-    top: 56px;
-    height: calc(100% - 112px);
   }
 }
 /*# sourceMappingURL=main.css.map */

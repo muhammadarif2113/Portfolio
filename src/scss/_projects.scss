@@ -121,6 +121,39 @@
                         }
                     }
                 }
+
+                .project-about{
+                    position: absolute;
+                    top: 450px; 
+                    right: 43px; 
+                    width: 90%; 
+                    text-align: center;
+                    min-width: 234px;
+
+                    .project-ctn{
+                        
+                        h2{
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            font-family: $font3;
+                            padding: 5px 0 5px 0; 
+                        }
+    
+                        p{
+                            padding: 5px 0 5px 0; 
+                            font-family: $font2;
+                        }
+    
+                        .github-link{
+                            font-size: 2rem;
+                            // a{
+                            //     color: $color1;
+                            // }
+                        }
+                    }
+
+
+                }
                 
     
                 h5{
@@ -187,6 +220,15 @@
     }
 }
 
+@media (min-width: 0px) and (max-width: 860px){
+    #projects{
+        .project-about{
+            // margin: 0 auto;
+            left: 13px;
+
+        }
+    }
+}
 //phone
 @media (min-width: 0px) and (max-width: 999px){
     #projects{
@@ -361,7 +403,7 @@
                         display: grid;
                         grid-column: 1fr;
                         grid-template-columns: 1fr;
-                        grid-row-gap: 50px;
+                        grid-row-gap: 320px;
 
                         .project-box{
                             .grey-bg{
