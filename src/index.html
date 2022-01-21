@@ -59,15 +59,15 @@
             
                 <div class="profile-section">
                     <div class="profile">
-                        <h1>Muhammad <br> <span> Arif</span></h1>
-                        <h5>Web Developer</h5>
+                        <h1 class="text-reveal">Muhammad <br> <span> Arif</span></h1>
+                        <h5 class="text-reveal">Web Developer</h5>
                         <p>Hello, I am a learning developer that specializes in the front end development of websites. Everyday I seek to improve my skills so I can use web technologies to build amazing applications.</p>
                         <p>Please <a href="/contact.html">contact </a> me for job opportunties or to simply have a chat.</p>
 
                         <div class="home-buttons-main">
                             <a href="/resume.html" class="primary-btn">Resume</a>
                             <a href="/projects.html" class="ghost-btn">Projects</a> <br>
-                            <a href="/photography.html" class="primary-btn">Photography</a>
+                            <a href="/photography.html" class="primary-btn">Gallery</a>
                             <a href="/contact.html" class="ghost-btn">Contact</a>
                         </div>
     
@@ -116,7 +116,7 @@
 
     <script>
         // Barba.Pjax.start();
-        gsap.from('.user-img', { duration: 0.7, y: '-100%'}); 
+        gsap.from('.user-img', { duration: 0.9, y: '-100%', ease: Expo.easeOut}); 
 
 
         [document.querySelector('#linkedin'), 
@@ -126,9 +126,13 @@
 
             const timeline = gsap.timeline({defaults: {duration: 0.8}})
             timeline
-                .fromTo(item, {scale: 0, rotation: 720}, { scale: 1, rotation: 0})            
+                .fromTo(item, {scale: 0, rotation: 720}, { scale: 1, rotation: 0})   
             })
         })
+
+        let tl = gsap.timeline({Defaults: { Easing: Expo.EaseOut}}); 
+
+        tl.to('.text-reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, stagger: .3})
 
         // const initialPageAnimation = () => {    
 
