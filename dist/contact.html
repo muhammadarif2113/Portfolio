@@ -105,12 +105,7 @@
     <script src="/js.00a46daa.js"></script>
     <script src="/contact.d3f2fcf9.js"></script>
 
-    <script>gsap.from('.img-container', {
-  duration: 0.9,
-  y: '-100%',
-  ease: Expo.easeOut
-});
-[document.querySelector('#linkedin'), document.querySelector('#github'), document.querySelector('#twitter')].forEach(function (item) {
+    <script>[document.querySelector('#linkedin'), document.querySelector('#github'), document.querySelector('#twitter')].forEach(function (item) {
   item.addEventListener('click', function () {
     var timeline = gsap.timeline({
       defaults: {
