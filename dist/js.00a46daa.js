@@ -117,163 +117,163 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/index.js":[function(require,module,exports) {
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-  return bundleURL;
-}
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/main.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../img/portrait.jpg":[["portrait.265e033e.jpg","img/portrait.jpg"],"img/portrait.jpg"],"_css_loader":"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
-"use strict";
-
-require("../scss/main.css");
-
+// import '../scss/main.css'
 // import barba from '@barba/core';
+// import barbaCss from '@barba/css'; 
 // Barba.Pjax.start();
 var navBar = document.querySelector('.menu-icon');
 var home = document.querySelector('.home');
 navBar.addEventListener('click', function () {
+  var links = document.querySelector('nav').children;
+
+  var _iterator = _createForOfIteratorHelper(links),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      link = _step.value;
+
+      if (document.URL == link.href) {
+        link.style.color = 'black';
+      }
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
   if (home.classList.contains('menu-active')) {
     home.classList.remove('menu-active');
   } else {
     home.classList.add('menu-active');
   }
-}); // const initialPageAnimation = () => {
+}); // console.log(document.URL); //baseURI
+// console.log(document.querySelector('nav').children); 
+// var links = document.querySelector('nav').children; 
+// barba.hooks.beforeEnter((datas) => {
+// })
+// const delay = (n) => {
+//     n = n || 2000; 
+//     return new Promise(done => {
+//         setTimeout(() => {
+//             done(); 
+//         }, n);
+//     });
 // }
-
-var delay = function delay(n) {
-  n = n || 2000;
-  return new Promise(function (done) {
-    setTimeout(function () {
-      done();
-    }, n);
-  });
-};
-
-var loadingLeave = function loadingLeave() {
-  var timeline = gsap.timeline();
-  timeline.fromTo('.loading-bg', {
-    y: "100%"
-  }, {
-    y: 0,
-    duration: 1
-  });
-};
-
-var loadingEnter = function loadingEnter() {
-  var timeline = gsap.timeline();
-  timeline.fromTo('.loading-bg', {
-    y: 0
-  }, {
-    y: "100%",
-    duration: 1
-  });
-};
-
-barba.init({
-  sync: true,
-  transitions: [{
-    name: 'page-wipe',
-    // to: {
-    //     namespace: ['resume', 'contact', 'photography', 'projects']
-    // },
-    leave: function leave(data) {
-      console.log('leaving animation');
-      var done = this.async();
-      loadingLeave();
-      delay(1500);
-      done();
-    },
-    enter: function enter(data) {
-      //data.next.container.style.backgroundColor = 'deepskyblue';
-      loadingEnter(); // initialPageAnimation(); 
-
-      console.log('entering page animation');
-    } // async once(data){
-    //     initialPageAnimation()
-    // }
-
-  }]
-});
-var cssId = 'myCss'; // you could encode the css path itself to generate id..
-
-if (!document.getElementById(cssId)) {
-  var head = document.getElementsByTagName('head')[0];
-  var link = document.createElement('link');
-  link.id = cssId;
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = 'http://website.com/css/stylesheet.css';
-  link.media = 'all';
-  head.appendChild(link);
-}
-},{"../scss/main.css":"scss/main.css"}],"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+// const animationEnter =(container) => {
+//     return gsap.from(container, { autoAlpha: 0, duration: 1, clearProps: 'all', ease: 'none'})
+// }
+// const animationLeave =(container) => {
+//     return gsap.to(container, { autoAlpha: 0, duration: 1, clearProps: 'all', ease: 'none'})
+// }
+// const loadingLeave = () => {
+//     let timeline = gsap.timeline(); 
+//     timeline.fromTo('.loading-bg', {
+//         y: "100%"
+//     }, {
+//         y: 0, 
+//         duration: 1, 
+//     })
+// }
+// const loadingEnter = () => {
+//     let timeline = gsap.timeline(); 
+//     timeline.fromTo(
+//         '.loading-bg', 
+//         {
+//             y: 0
+//         },
+//         {
+//             y: "100%", 
+//             duration: 1, 
+//         }
+//     )
+// }
+// barba.init({
+//     sync: true, 
+//     transitions: [
+//         {
+//             name: 'page-wipe', 
+//             from: {
+//                 namespace: ['home']
+//             }, 
+//             // to: {
+//             //     namespace: ['resume']
+//             // },
+//             once({next}){
+//                 animationEnter(next.container)
+//             }, 
+//             async leave({current}){
+//                 console.log('leaving'); 
+//                 const done = this.async(); 
+//                 loadingLeave(); 
+//                 animationLeave(current.container)
+//                 await delay(800); 
+//                 done(); 
+//             }, 
+//             async enter({next}){
+//                 console.log('entering'); 
+//                 animationEnter(next.container); 
+//             }, 
+//             // to: {
+//             //     namespace: ['resume', 'contact', 'photography', 'projects']
+//             // },
+//             //  leave(data){
+//             //     console.log('leaving animation')
+//             //     // const done = this.async(); 
+//             //     loadingLeave(); 
+//             //     // await delay(2000); 
+//             //     // done(); 
+//             // }, 
+//             //  enter(data){
+//             //     //data.next.container.style.backgroundColor = 'deepskyblue';
+//             //     loadingEnter(); 
+//             //     console.log('entering page animation');
+//             // }, 
+//             // async once(data){
+//             //     initialPageAnimation()
+//             // }
+//         }
+//     ],
+//     // views: [
+//     //     {
+//     //         namespace: 'resume',
+//     //         beforeEnter({next}){
+//     //             if (typeof window.createMap === 'function') {
+//     //                 window.createMap();
+//     //               } else {
+//     //                 window.createMap = () => {
+//     //                   // create your map here using the Map API
+//     //                   // Map, LatLng, InfoWindow, etc.
+//     //                 };
+//     //                 // load the Google Map API script
+//     //                 let link = document.createElement('script');
+//     //                 link.src = './scss/_resume.css'
+//     //                 next.container.appendChild(link);
+//     //         }
+//     //     }
+//     // }]
+// })
+// // var cssId = 'myCss';  // you could encode the css path itself to generate id..
+// // if (!document.getElementById(cssId))
+// // {
+// //     var head  = document.getElementsByTagName('head')[0];
+// //     var link  = document.createElement('link');
+// //     link.id   = cssId;
+// //     link.rel  = 'stylesheet';
+// //     link.type = 'text/css';
+// //     link.href = 'http://website.com/css/stylesheet.css';
+// //     link.media = 'all';
+// //     head.appendChild(link);
+// // }
+},{}],"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -301,7 +301,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57215" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54158" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
