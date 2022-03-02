@@ -122,7 +122,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/portrait.jpg":[["portrait.265e033e.jpg","img/portrait.jpg"],"img/portrait.jpg"],"_css_loader":"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../img/1.jpg":[["1.dc197a9a.jpg","img/1.jpg"],"img/1.jpg"],"./../img/8.jpg":[["8.f4323fe0.jpg","img/8.jpg"],"img/8.jpg"],"./../img/3.jpg":[["3.a433b89d.jpg","img/3.jpg"],"img/3.jpg"],"_css_loader":"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../../home/moe/.nvm/versions/node/v16.13.1/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -150,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60369" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62216" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

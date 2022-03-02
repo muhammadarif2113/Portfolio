@@ -345,11 +345,44 @@ html .logo a {
   left: -250px;
   width: 500px;
   height: 100%;
-  background: url(../img/portrait.jpg) no-repeat center center;
+  background: url(../img/1.jpg) no-repeat center center;
+  -webkit-animation-name: animate;
+  -webkit-animation-direction: alternate-reverse;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: animate;
+  -moz-animation-direction: alternate-reverse;
+  -moz-animation-duration: 15s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-play-state: running;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-name: animate;
+  -o-animation-direction: alternate-reverse;
+  -o-animation-duration: 15s;
+  -o-animation-fill-mode: forwards;
+  -o-animation-iteration-count: infinite;
+  -o-animation-play-state: running;
+  -o-animation-timing-function: ease-in-out;
   border-radius: 5px;
   background-size: cover;
   -webkit-box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
   box-shadow: 9px 20px 74px 6px rgba(0, 0, 0, 0.34);
+}
+
+@-webkit-keyframes animate {
+  25% {
+    background-image: url(../img/8.jpg);
+  }
+  50% {
+    background-image: url(../img/3.jpg);
+  }
+  100% {
+    background-image: url(../img/1.jpg);
+  }
 }
 
 #homee .content-area .profile-section {
