@@ -111,7 +111,16 @@ gtag('config', 'G-3D0DWESRJC');</script>
     <script src="/js.00a46daa.js"></script>
     <script src="/contact.d3f2fcf9.js"></script>
 
-    <script>[document.querySelector('#linkedin'), document.querySelector('#github'), document.querySelector('#twitter')].forEach(function (item) {
+    <script>window.addEventListener('load', function () {
+  gsap.from('.logo', {
+    duration: 2,
+    scale: 0,
+    rotation: 720
+  }, {
+    scale: 1,
+    rotation: 0
+  });
+})[(document.querySelector('#linkedin'), document.querySelector('#github'), document.querySelector('#twitter'))].forEach(function (item) {
   item.addEventListener('click', function () {
     var timeline = gsap.timeline({
       defaults: {

@@ -122,6 +122,11 @@
 
     <script>
         // Barba.Pjax.start();
+        window.addEventListener('load', () => {
+            gsap.from('.logo', {duration: 2, scale: 0, rotation: 720}, { scale: 1, rotation: 0}) 
+        })
+
+
         gsap.from('.user-img', { duration: 0.9, y: '-100%', ease: Expo.easeOut}); 
 
 

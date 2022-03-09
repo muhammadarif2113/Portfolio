@@ -98,6 +98,7 @@ html .logo a {
 }
 
 .primary-btn {
+  border: 4px solid #FEFEFE;
   background: #4b21ff;
   border-radius: 30px;
   text-align: center;
@@ -113,8 +114,8 @@ html .logo a {
 }
 
 .primary-btn:hover {
-  border-color: #ffe621;
-  background: #ffe621;
+  border-color: #4b21ff;
+  background: #FEFEFE;
   color: #4b21ff;
   font-size: 1.5rem;
 }
@@ -140,9 +141,10 @@ html .logo a {
 }
 
 .ghost-btn:hover {
-  border-color: #ffe621;
-  color: #4b21ff;
+  border-color: #4b21ff;
+  background: #4b21ff;
   font-size: 1.5rem;
+  color: #FEFEFE;
 }
 
 #menu {
@@ -345,24 +347,24 @@ html .logo a {
   left: -250px;
   width: 500px;
   height: 100%;
-  background: url(../img/11.jpg) no-repeat center center;
+  background: url(../img/11-compressed.jpg) no-repeat center center;
   -webkit-animation-name: animate;
   -webkit-animation-direction: alternate-reverse;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 20s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-play-state: running;
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-name: animate;
   -moz-animation-direction: alternate-reverse;
-  -moz-animation-duration: 15s;
+  -moz-animation-duration: 20s;
   -moz-animation-fill-mode: forwards;
   -moz-animation-iteration-count: infinite;
   -moz-animation-play-state: running;
   -moz-animation-timing-function: ease-in-out;
   -o-animation-name: animate;
   -o-animation-direction: alternate-reverse;
-  -o-animation-duration: 15s;
+  -o-animation-duration: 20s;
   -o-animation-fill-mode: forwards;
   -o-animation-iteration-count: infinite;
   -o-animation-play-state: running;
@@ -374,14 +376,18 @@ html .logo a {
 }
 
 @-webkit-keyframes animate {
+  0% {
+    background-image: url(../img/profile2.jpg);
+  }
   25% {
-    background-image: url(../img/88.jpg);
+    background-image: url(../img/11-compressed.jpg);
   }
   50% {
-    background-image: url(../img/33.jpg);
+    background-image: url(../img/profile2.jpg);
+    background-position: right;
   }
   100% {
-    background-image: url(../img/11.jpg);
+    background-image: url(../img/11-compressed.jpg);
   }
 }
 
@@ -413,18 +419,17 @@ html .logo a {
 }
 
 #homee .content-area .profile-section .profile h5 {
-  font-family: "Playfair Display", serif;
+  font-family: "Archivo", sans-serif, "Dosis", sans-serif, "Fira Sans", sans-serif, "Lato", sans-serif, "Merriweather", serif, "Orbitron", sans-serif, "Playfair Display", serif, "Fira Sans", sans-serif;
   font-size: 1.1rem;
   margin: 0 0 2rem 0;
 }
 
 #homee .content-area .profile-section .profile p {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   color: #a9a9a9;
-  font-weight: 300;
   line-height: 1.4;
   margin: 0 0 2rem;
-  font-weight: 600;
+  color: black;
 }
 
 #homee footer {

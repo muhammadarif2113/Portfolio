@@ -141,7 +141,17 @@ gtag('config', 'G-3D0DWESRJC');</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="/js.00a46daa.js"></script>
 
-    <script>gsap.from('.resume-pdf', {
+    <script>window.addEventListener('load', function () {
+  gsap.from('.logo', {
+    duration: 2,
+    scale: 0,
+    rotation: 720
+  }, {
+    scale: 1,
+    rotation: 0
+  });
+});
+gsap.from('.resume-pdf', {
   duration: 0.7,
   y: '-100%'
 });

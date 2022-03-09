@@ -231,6 +231,9 @@
     <script type="text/javascript" src="./js/index.js"></script> -->
 
     <script>
+        window.addEventListener('load', () => {
+            gsap.from('.logo', {duration: 2, scale: 0, rotation: 720}, { scale: 1, rotation: 0}) 
+        })
         // const galleryEnter = () => {
         //     let timeline = gsap.timeline(); 
         //     timeline.fromTo(

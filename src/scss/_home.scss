@@ -79,7 +79,7 @@
                 //height:700px; //calc(100% - 112px);
                 height: 100%;
 
-                background: url(../img/11.jpg) no-repeat center center; 
+                background: url(../img/11-compressed.jpg) no-repeat center center; 
 
                 // animation-name: animate;
                 // animation-direction: alternate-reverse;
@@ -91,7 +91,7 @@
 
                 -webkit-animation-name: animate;
                 -webkit-animation-direction: alternate-reverse;
-                -webkit-animation-duration: 15s;
+                -webkit-animation-duration: 20s;
                 -webkit-animation-fill-mode: forwards;
                 -webkit-animation-iteration-count: infinite;
                 -webkit-animation-play-state: running;
@@ -99,7 +99,7 @@
 
                 -moz-animation-name: animate;
                 -moz-animation-direction: alternate-reverse;
-                -moz-animation-duration: 15s;
+                -moz-animation-duration: 20s;
                 -moz-animation-fill-mode: forwards;
                 -moz-animation-iteration-count: infinite;
                 -moz-animation-play-state: running;
@@ -107,7 +107,7 @@
 
                 -o-animation-name: animate;
                 -o-animation-direction: alternate-reverse;
-                -o-animation-duration: 15s;
+                -o-animation-duration: 20s;
                 -o-animation-fill-mode: forwards;
                 -o-animation-iteration-count: infinite;
                 -o-animation-play-state: running;
@@ -123,15 +123,20 @@
                 box-shadow: 9px 20px 74px 6px rgba(0,0,0,0.34);
             }
             @-webkit-keyframes animate {
+                0%{
+                    background-image: url(../img/profile2.jpg);
+                }
                 25%{
-                    background-image: url(../img/88.jpg);
+                    background-image: url(../img/11-compressed.jpg);
                 }
                 50%{
-                    background-image: url(../img/33.jpg);
+                    background-image: url(../img/profile2.jpg);
+                    background-position: right;
                 }
                 100%{
-                    background-image: url(../img/11.jpg);
+                    background-image: url(../img/11-compressed.jpg);
                 }
+                
             }
         }
 
@@ -158,17 +163,16 @@
                     }
                 }
                 h5{
-                    font-family: $font2;
+                    font-family: $font4;
                     font-size: 1.1rem;
                     margin: 0 0 2rem 0;
                 }
                 p{
-                    font-family: $font1;
+                    font-family: $font2;
                     color: $color4;
-                    font-weight: 300;
                     line-height: 1.4;
                     margin: 0 0 2rem;
-                    font-weight: 600;
+                    color: black;
                 }
 
                 

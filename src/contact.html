@@ -111,7 +111,9 @@
     <script src="./js/contact.js"></script>
 
     <script>
-
+        window.addEventListener('load', () => {
+            gsap.from('.logo', {duration: 2, scale: 0, rotation: 720}, { scale: 1, rotation: 0}) 
+        })
         [document.querySelector('#linkedin'), 
         document.querySelector('#github'), 
         document.querySelector('#twitter')].forEach(item => {

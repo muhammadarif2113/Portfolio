@@ -231,7 +231,16 @@ gtag('config', 'G-3D0DWESRJC');</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script> -->
 
-    <script>// const galleryEnter = () => {
+    <script>window.addEventListener('load', function () {
+  gsap.from('.logo', {
+    duration: 2,
+    scale: 0,
+    rotation: 720
+  }, {
+    scale: 1,
+    rotation: 0
+  });
+}); // const galleryEnter = () => {
 //     let timeline = gsap.timeline(); 
 //     timeline.fromTo(
 //         '.white-bg', 
