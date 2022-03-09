@@ -121,8 +121,10 @@ gtag('config', 'G-3D0DWESRJC');</script>
     <script src="/js.00a46daa.js"></script>
     
 
-    <script>// Barba.Pjax.start();
+    <script>var homeLink = document.querySelector('#nav-home'); // Barba.Pjax.start();
+
 window.addEventListener('load', function () {
+  homeLink.style.color = 'black';
   gsap.from('.logo', {
     duration: 2,
     scale: 0,

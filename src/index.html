@@ -121,8 +121,10 @@
     
 
     <script>
+        var homeLink = document.querySelector('#nav-home')
         // Barba.Pjax.start();
         window.addEventListener('load', () => {
+            homeLink.style.color = 'black'; 
             gsap.from('.logo', {duration: 2, scale: 0, rotation: 720}, { scale: 1, rotation: 0}) 
         })
 

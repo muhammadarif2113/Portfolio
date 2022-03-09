@@ -91,7 +91,7 @@
 
                 -webkit-animation-name: animate;
                 -webkit-animation-direction: alternate-reverse;
-                -webkit-animation-duration: 20s;
+                -webkit-animation-duration: 25s;
                 -webkit-animation-fill-mode: forwards;
                 -webkit-animation-iteration-count: infinite;
                 -webkit-animation-play-state: running;
@@ -99,7 +99,7 @@
 
                 -moz-animation-name: animate;
                 -moz-animation-direction: alternate-reverse;
-                -moz-animation-duration: 20s;
+                -moz-animation-duration: 25s;
                 -moz-animation-fill-mode: forwards;
                 -moz-animation-iteration-count: infinite;
                 -moz-animation-play-state: running;
@@ -107,7 +107,7 @@
 
                 -o-animation-name: animate;
                 -o-animation-direction: alternate-reverse;
-                -o-animation-duration: 20s;
+                -o-animation-duration: 25s;
                 -o-animation-fill-mode: forwards;
                 -o-animation-iteration-count: infinite;
                 -o-animation-play-state: running;
@@ -164,11 +164,12 @@
                 }
                 h5{
                     font-family: $font4;
-                    font-size: 1.1rem;
+                    font-size: 1.4rem;
                     margin: 0 0 2rem 0;
                 }
                 p{
                     font-family: $font2;
+                    font-size: 1.2rem;
                     color: $color4;
                     line-height: 1.4;
                     margin: 0 0 2rem;
@@ -287,6 +288,7 @@
         .content-area{
             margin-left: 0;
             width: 100%;
+            min-width: 387px;
             // height: auto; 
             // height: 1000px; 
 
@@ -320,6 +322,16 @@
                     // height: 100%; 
                     width: 100%;
                     margin-left: 5px;
+
+                    h1{
+                        font-size: 2.0rem;
+                    }
+                    h5{
+                        font-size: 1.3rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
 
                     .home-buttons-main{
                         display: none;
@@ -392,6 +404,21 @@
     //     }
     // }
 }
+
+@media (min-width: 534px) and (max-width: 591px) {
+    #homee{
+        .content-area{
+            .profile-section{
+                .profile{
+                    .home-buttons-main{
+                        display: grid;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 534px) and (max-width: 767px) {
     #homee{
         .menu-icon{
@@ -499,6 +526,12 @@
                 float: right;
                 padding: 20% 0px 0 0;
                 margin-right: 50px;
+
+                .profile{
+                    .home-buttons-main{
+                        display: grid;
+                    }
+                }
             }
         }
     }
@@ -542,7 +575,7 @@
                 padding: 56px 20px 0;
                 float: left;
                 .user-img{
-                    height: calc(100% - 512px);
+                    height: calc(100% - 312px);
                     
                     // height: 900px;
                 }
@@ -569,22 +602,22 @@
     }
 }
 
-@media(max-width: 1635px){
-    .home{
-        .content-area{
-            .img-container{
-                .user-img{
-                    top: 180px; 
-                    left: -350px;
-                    // width: 500px;
-                    // height: calc(100% - 512px);
-                    // height: 100%;
+// @media(max-width: 1635px){
+//     .home{
+//         .content-area{
+//             .img-container{
+//                 .user-img{
+//                     top: 180px; 
+//                     left: -350px;
+//                     // width: 500px;
+//                     // height: calc(100% - 512px);
+//                     // height: 100%;
 
-                }
-            }
-        }
-    }
-}
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media(min-width: 1636px){
     #homee{

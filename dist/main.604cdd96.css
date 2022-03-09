@@ -350,21 +350,21 @@ html .logo a {
   background: url(/11-compressed.f6b66463.jpg) no-repeat center center;
   -webkit-animation-name: animate;
   -webkit-animation-direction: alternate-reverse;
-  -webkit-animation-duration: 20s;
+  -webkit-animation-duration: 25s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-play-state: running;
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-name: animate;
   -moz-animation-direction: alternate-reverse;
-  -moz-animation-duration: 20s;
+  -moz-animation-duration: 25s;
   -moz-animation-fill-mode: forwards;
   -moz-animation-iteration-count: infinite;
   -moz-animation-play-state: running;
   -moz-animation-timing-function: ease-in-out;
   -o-animation-name: animate;
   -o-animation-direction: alternate-reverse;
-  -o-animation-duration: 20s;
+  -o-animation-duration: 25s;
   -o-animation-fill-mode: forwards;
   -o-animation-iteration-count: infinite;
   -o-animation-play-state: running;
@@ -420,12 +420,13 @@ html .logo a {
 
 #homee .content-area .profile-section .profile h5 {
   font-family: "Archivo", sans-serif, "Dosis", sans-serif, "Fira Sans", sans-serif, "Lato", sans-serif, "Merriweather", serif, "Orbitron", sans-serif, "Playfair Display", serif, "Fira Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin: 0 0 2rem 0;
 }
 
 #homee .content-area .profile-section .profile p {
   font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
   color: #a9a9a9;
   line-height: 1.4;
   margin: 0 0 2rem;
@@ -517,6 +518,7 @@ html .logo a {
   #homee .content-area {
     margin-left: 0;
     width: 100%;
+    min-width: 387px;
   }
   #homee .content-area .img-container {
     padding-top: 60px;
@@ -545,6 +547,15 @@ html .logo a {
     width: 100%;
     margin-left: 5px;
   }
+  #homee .content-area .profile-section .profile h1 {
+    font-size: 2.0rem;
+  }
+  #homee .content-area .profile-section .profile h5 {
+    font-size: 1.3rem;
+  }
+  #homee .content-area .profile-section .profile p {
+    font-size: 1.1rem;
+  }
   #homee .content-area .profile-section .profile .home-buttons-main {
     display: none;
   }
@@ -565,6 +576,13 @@ html .logo a {
   }
   #homee footer .icons {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 534px) and (max-width: 591px) {
+  #homee .content-area .profile-section .profile .home-buttons-main {
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -643,6 +661,10 @@ html .logo a {
     padding: 20% 0px 0 0;
     margin-right: 50px;
   }
+  #homee .content-area .profile-section .profile .home-buttons-main {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -672,7 +694,7 @@ html .logo a {
     float: left;
   }
   #homee .content-area .img-container .user-img {
-    height: calc(100% - 512px);
+    height: calc(100% - 312px);
   }
   #homee .content-area .profile-section {
     width: 70%;
@@ -685,13 +707,6 @@ html .logo a {
 @media (min-width: 1200px) and (max-width: 1400px) {
   #homee .content-area .profile-section {
     margin-left: 35px;
-  }
-}
-
-@media (max-width: 1635px) {
-  .home .content-area .img-container .user-img {
-    top: 180px;
-    left: -350px;
   }
 }
 
