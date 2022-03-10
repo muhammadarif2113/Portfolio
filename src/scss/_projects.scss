@@ -397,6 +397,19 @@
                 }
             }
         }
+        .content-area{
+            .scroll-section{
+                .projects-section{
+
+                    .work-section{
+                        display: grid;
+                        grid-column: 1fr;
+                        grid-template-columns: 1fr;
+                        grid-row-gap: 320px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -406,10 +419,10 @@
             .scroll-section{
                 .projects-section{
                     .work-section{
-                        display: grid;
-                        grid-column: 1fr;
-                        grid-template-columns: 1fr;
-                        grid-row-gap: 320px;
+                        // display: grid;
+                        // grid-column: 1fr 1fr;
+                        // grid-template-columns: 1fr 1fr;
+                        // grid-row-gap: 320px;
 
                         .project-box{
                             .grey-bg{

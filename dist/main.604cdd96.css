@@ -1326,9 +1326,6 @@ html .logo a {
   #projects .info-section .info-box span {
     display: block;
   }
-}
-
-@media (max-width: 2310px) {
   #projects .content-area .scroll-section .projects-section .work-section {
     display: -ms-grid;
     display: grid;
@@ -1338,6 +1335,9 @@ html .logo a {
         grid-template-columns: 1fr;
     grid-row-gap: 320px;
   }
+}
+
+@media (max-width: 2310px) {
   #projects .content-area .scroll-section .projects-section .work-section .project-box .grey-bg {
     position: absolute;
   }
