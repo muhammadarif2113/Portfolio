@@ -34,8 +34,9 @@
     
         .work-section{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-column-gap: 1rem;
+            grid-row-gap: 15rem; 
 
 
             a{
@@ -96,6 +97,7 @@
                         bottom: 0;
                         width: 100%;
 
+
                         .project-details{
                             position: relative;
                             font-size: 1.1rem;
@@ -104,6 +106,7 @@
                             transform: translate3d(-200px, 0, 0); 
                             transition: all .3s ease-in-out;
                             opacity: 0;
+
                         }
                         .project-title{
                             font-size: 1.8rem;
